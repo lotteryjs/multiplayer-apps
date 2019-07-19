@@ -3,9 +3,11 @@
 `5G 时代的到临，高实时应用应该会有所爆发……`
 
 ### 前置知识
-* 感兴趣就好(不懂的知识 `google` 都会给你🆙)
 
-本系列教程将以 [nano](https://github.com/lonng/nano)(Lightweight, facility, high performance golang based game server framework) 项目为探索对象。
+* 感兴趣就好(不懂的知识 `google` 都会给你🆙)
+* 基本的服务端知识(最好有 Golang 基础)
+
+本系列教程将以 [Nano](https://github.com/lonng/nano)(Lightweight, facility, high performance golang based game server framework) 项目为探索对象。
 
 * 它是一个轻量级的项目，可以很好的让我们入门 ` Golang 高实时 Web 应用`
 * 重量级 MMORPG 框架目前不在此讨论范围内🤣
@@ -24,7 +26,10 @@ Server 源码分析对象：[NanoServer](https://github.com/lonng/nanoserver)
 
 我这边会陆陆续续使用 [Cocos Creator](https://www.cocos.com/creator) 去开发一套完整的客户端并且开源。
 
-### 
+### Nano 基本术语脑图
+脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
+
+
 
 ### NanoServer 业务分析
 
