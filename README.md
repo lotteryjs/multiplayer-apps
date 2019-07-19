@@ -29,9 +29,9 @@ Server 端源码分析项目：[NanoServer](https://github.com/lonng/nanoserver)
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
 
+![nano-get-started](image/nano-get-started.png)
 
-
-### NanoServer 业务分析
+### NanoServer 整体架构(🙅‍♀️🙅‍♂️不要在此意淫分布式，微服务，DevOps……☞这里旨在先入门🤣)
 
 
 
