@@ -31,7 +31,8 @@ Server 端源码分析项目：[NanoServer](https://github.com/lonng/nanoserver)
 
 ![nano-get-started](image/nano-get-started.png)
 
-### NanoServer 整体架构(🙅‍♀️🙅‍♂️不要在此意淫分布式，微服务，DevOps……☞这里旨在先入门🤣)
+### NanoServer 整体架构
+<small>🙅‍♀️🙅‍♂️不要在此意淫分布式，微服务，DevOps……☞这里旨在先入门🤣</small>
 
 
 
