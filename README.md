@@ -7,7 +7,7 @@
 * 它是一个轻量级的项目，可以很好的让我们入门 ` Golang 高实时 Web 应用`
 * 重量级 MMORPG 框架目前不在此讨论范围内🤣
 
-Server 源码分析对象 [nanoserver](https://github.com/lonng/nanoserver)
+Server 源码分析对象 [NanoServer](https://github.com/lonng/nanoserver)
 
 * 大家也可以直接看源码学习，不用管我下面👇的废话🤣（快速应用于自己业务线才是最重要的）
 
