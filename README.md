@@ -158,6 +158,10 @@ Go
 * WebSocket 连接非线程安全，并发读/写需要同步手段
   * ReadMessage & WriteMessage 同一时刻只能有一个代码调用
 
+隐藏细节
+* 封装Connection结构，隐藏 WebSocket 底层连接
+* 封装Connection的API，提供 Send/Read/Close 等线程安全接口
+
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
 
