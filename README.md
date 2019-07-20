@@ -37,6 +37,10 @@ Server 端源码分析项目：[NanoServer](https://github.com/lonng/nanoserver)
 
 以下文字是针对上述视频的脱敏处理(`感谢小鱼儿大佬提供如此通俗易懂的入门教程`)
 
+#### 什么是推送系统？
+
+![push1](./image/push1.png)
+
 
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
