@@ -28,7 +28,9 @@ Server 端源码分析项目：[NanoServer](https://github.com/lonng/nanoserver)
 
 ### 快速上手 GO & WebSocket
 
-扫盲视频教程：[GO实现千万级WebSocket消息推送服务](https://github.com/owenliang/go-push)
+视频教程：[GO实现千万级WebSocket消息推送服务](https://github.com/owenliang/go-push)
+* 非常好的扫盲教程
+* 如果你从来没有接触过 WebSocket，那么你一定要看一下
 
 示例源码：[go-websocket](https://github.com/owenliang/go-websocket) & [go-push](https://github.com/owenliang/go-push)
 * 一些 DevOps 额外话(也许你不需要关注……)
