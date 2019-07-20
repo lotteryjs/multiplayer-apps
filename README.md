@@ -147,7 +147,16 @@ Go
 #### 完成 WebSocket 握手
 * 使用 websocket.Upgrader 完成协议握手，得到 WebSocket 长连接
   * 握手具体操作交给标准库去操作
+    * upgrader := websocket.Upgrader{ CheckOrigin: func }
+    * upgrader.Upgrade(w, r, nil)
 * 操作 websocket api, 读取客户端消息，然后原样发送回去
+
+#### 封装 WebSocket
+
+缺乏工程化的设计
+* 其它代码模块，无法直接操作 WebSocket 连接
+* WebSocket 连接非线程安全，并发读/写需要同步手段
+  * ReadMessage & WriteMessage 同一时刻只能有一个代码调用
 
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
