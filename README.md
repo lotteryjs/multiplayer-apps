@@ -162,6 +162,10 @@ Go
 * 封装Connection结构，隐藏 WebSocket 底层连接
 * 封装Connection的API，提供 Send/Read/Close 等线程安全接口
 
+API原理
+* SendMessage 将消息投递到 out channel
+* ReadMessage 从 in channel 读取消息
+
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
 
