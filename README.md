@@ -84,6 +84,10 @@ N 个直播间
 * 一旦完成协商后(当然，此时客户端与服务端的底层 TCP 连接应该是没有中断的)
 * 接下来，`客户端`就可以向`服务端`发送基于`websocket`协议的 `message` (消息)
 * `服务端`也可以主动向`客户端`发送基于`websocket`协议的 `message` (消息)
+
+    ![websocket](./websocket/images/websocket.png)
+
+
   
 
 ### Nano 基本术语脑图
