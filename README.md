@@ -78,6 +78,11 @@ N 个直播间
 * 提供高度抽象的编程接口，业务开发成本较低
 
 #### WebSocket 协议与交互(`必备基础`)
+
+![websocket](./websocket/images/websocket.png)
+
+传输原理
+
 * 客户端与服务端之间首先要完成一次握手🤝的操作
 * 握手本身是基于 HTTP 调用完成的
 * 客户端首先发送一条 HTTP 请求到服务端
@@ -86,10 +91,9 @@ N 个直播间
 * 服务端收到之后，就会响应一个握手🤝的确认 `switching`
   * `switching` 的意思就是说，服务端已经允许你向 `websocket` 协议转换了
 * 一旦完成协商后(当然，此时客户端与服务端的底层 TCP 连接应该是没有中断的)
+  * 协议升级后，继续复用 HTTP 的底层 Socket 完成后续通讯
 * 接下来，`客户端`就可以向`服务端`发送基于`websocket`协议的 `message` (消息)
 * `服务端`也可以主动向`客户端`发送基于`websocket`协议的 `message` (消息)
-
-    ![websocket](./websocket/images/websocket.png)
 
 
   
