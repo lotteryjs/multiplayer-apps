@@ -141,9 +141,8 @@ Go
 #### 实现 HTTP 服务端
 * WebSocket 是 HTTP 协议 Upgrade 而来
 * 使用 http 标准库快速实现空接口：/ws
-
-
-  
+  * 配置路由
+  * 监听服务
 
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
