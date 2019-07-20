@@ -10,7 +10,7 @@
 
 * 感兴趣就好(不懂的知识 `Google` 都会给你🆙)
 * 基本的服务端知识(最好有 Golang 基础)
-* 有 Docker 知识的话，几乎所有的实验环境你都能构造出来
+* 有 Docker 知识的话，几乎所有的实验环境你都能快速的构造出来
 
 本系列教程将以 [Nano](https://github.com/lonng/nano)(Lightweight, facility, high performance golang based game server framework) 项目为探索对象。
 
