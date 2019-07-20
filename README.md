@@ -26,6 +26,18 @@ Server 端源码分析项目：[NanoServer](https://github.com/lonng/nanoserver)
 
 我这边会陆陆续续使用 [Cocos Creator](https://www.cocos.com/creator) 去开发一套完整的客户端并且开源。
 
+### 快速上手 GO & WebSocket
+
+扫盲视频教程：[GO实现千万级WebSocket消息推送服务](https://github.com/owenliang/go-push)
+
+示例源码：[go-push](https://github.com/owenliang/go-push)
+* 一些 DevOps 额外话(也许你不需要关注……)
+* 关于如何优雅的部署(traffic,k8s,docker,swarm……说实话相关内容还挺多的🤦‍♀️)
+* 本地可以采用 [Vagrant + VirtualBox] 或 [Docker Machine + VirtualBox] 快速搭建实验环境
+
+以下文字是针对上述视频的脱敏处理(`感谢小鱼儿大佬提供如此通俗易懂的入门教程`)
+
+
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
 
