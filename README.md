@@ -4,7 +4,7 @@
 
 ### 本笔记📒阅读前置知识
 
-* 感兴趣就好(不懂的知识 `google` 都会给你🆙)
+* 感兴趣就好(不懂的知识 `Google` 都会给你🆙)
 * 基本的服务端知识(最好有 Golang 基础)
 
 本系列教程将以 [Nano](https://github.com/lonng/nano)(Lightweight, facility, high performance golang based game server framework) 项目为探索对象。
