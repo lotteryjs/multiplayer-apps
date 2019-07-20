@@ -39,7 +39,7 @@ Server 端源码分析项目：[NanoServer](https://github.com/lonng/nanoserver)
 
 #### 什么是推送系统？
 
-![push1](./websocket/push1.png)
+![push1](./websocket/images/push1.png)
 
 
 ### Nano 基本术语脑图
