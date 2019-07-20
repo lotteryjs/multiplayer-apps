@@ -73,7 +73,8 @@ N 个直播间
 * 基于TCP可靠传输之上的协议，无需开发者关心通讯细节
 * 提供高度抽象的编程接口，业务开发成本较低
 
-
+#### WebSocket 协议与交互(`必备基础`)
+* 
 
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
