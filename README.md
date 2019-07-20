@@ -74,7 +74,12 @@ N 个直播间
 * 提供高度抽象的编程接口，业务开发成本较低
 
 #### WebSocket 协议与交互(`必备基础`)
-* 
+* 客户端与服务端之间首先要完成一次握手🤝的操作
+* 握手本身是基于 HTTP 调用完成的
+* 客户端首先发送一条 HTTP 请求到服务端
+  * 请求的特殊之处在于，它 Header 里面带了一个 `upgrade` 字段
+  * 它告诉服务端，我想要升级为 WebSocket 协议
+  
 
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
