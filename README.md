@@ -144,6 +144,10 @@ Go
   * 配置路由
   * 监听服务
 
+#### 完成 WebSocket 握手
+* 使用 websocket.Upgrader 完成协议握手，得到 WebSocket 长连接
+* 操作 websocket api, 读取客户端消息，然后原样发送回去
+
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
 
