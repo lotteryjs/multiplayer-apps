@@ -102,9 +102,17 @@ N 个直播间
 * 接下来，`客户端`就可以向`服务端`发送基于`websocket`协议的 `message` (消息)
 * `服务端`也可以主动向`客户端`发送基于`websocket`协议的 `message` (消息)
 
-#### 抓包观察
+#### 抓包观察，弄清楚我们能做推送的依据(`非常重要`)
 * 使用 Chrome 开发者工具，观察 WebSocket 通讯流程
   * 从握手到后续消息的收发，到底经历了什么？
+* [go-websocket](https://github.com/owenliang/go-websocket)
+  * Down下来，自己感受一下
+  * 后续，我会弄成一个 Docker Image(ToDo)
+
+![devtool-1](./websocket/images/devtool-1.png)
+
+![devtool-2](./websocket/images/devtool-2.png)
+
 
 
 
