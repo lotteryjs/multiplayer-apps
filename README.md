@@ -30,7 +30,7 @@ Server 端源码分析项目：[NanoServer](https://github.com/lonng/nanoserver)
 
 扫盲视频教程：[GO实现千万级WebSocket消息推送服务](https://github.com/owenliang/go-push)
 
-示例源码：[go-push](https://github.com/owenliang/go-push)
+示例源码：[go-websocket](https://github.com/owenliang/go-websocket) & [go-push](https://github.com/owenliang/go-push)
 * 一些 DevOps 额外话(也许你不需要关注……)
 * 关于如何优雅的部署(traffic,k8s,docker,swarm……说实话相关内容还挺多的🤦‍♀️)
 * 本地可以采用 [Vagrant + VirtualBox] 或 [Docker Machine + VirtualBox] 快速搭建实验环境,可以参看我的[DevOps](https://github.com/Kirk-Wang/DevOps)仓库
