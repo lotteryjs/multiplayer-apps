@@ -10,6 +10,7 @@
 
 * 感兴趣就好(不懂的知识 `Google` 都会给你🆙)
 * 基本的服务端知识(最好有 Golang 基础)
+* 有 Docker 知识的话，几乎所有的实验环境你都能构造出来
 
 本系列教程将以 [Nano](https://github.com/lonng/nano)(Lightweight, facility, high performance golang based game server framework) 项目为探索对象。
 
@@ -100,6 +101,11 @@ N 个直播间
     * 框架底层完成 TCP 网络 I/O，WebSocket 协议解析，开发者无需关心
 * 接下来，`客户端`就可以向`服务端`发送基于`websocket`协议的 `message` (消息)
 * `服务端`也可以主动向`客户端`发送基于`websocket`协议的 `message` (消息)
+
+#### 抓包观察
+* 使用 Chrome 开发者工具，观察 WebSocket 通讯流程
+  * 从握手到后续消息的收发，到底经历了什么？
+
 
 
   
