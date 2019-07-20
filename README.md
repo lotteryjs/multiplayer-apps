@@ -146,6 +146,7 @@ Go
 
 #### 完成 WebSocket 握手
 * 使用 websocket.Upgrader 完成协议握手，得到 WebSocket 长连接
+  * 握手具体操作交给标准库去操作
 * 操作 websocket api, 读取客户端消息，然后原样发送回去
 
 ### Nano 基本术语脑图
