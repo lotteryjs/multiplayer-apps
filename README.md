@@ -20,8 +20,7 @@
 Server 端项目源码分析对象
   * [go-push](https://github.com/owenliang/go-push)
   * [NanoServer](https://github.com/lonng/nanoserver)
-
-* 大家也可以直接看源码学习，不用管我下面👇的废话🤣（快速应用于自己业务线才是最重要的）
+  * 大家也可以直接看源码学习，不用管我下面👇的废话🤣（快速应用于自己业务线才是最重要的）
 
 为什么选择 Nano？
 
