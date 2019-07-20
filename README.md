@@ -41,6 +41,10 @@ Server 端源码分析项目：[NanoServer](https://github.com/lonng/nanoserver)
 
 ![push1](./websocket/images/push1.png)
 
+#### 弹幕系统的技术挑战
+
+
+
 
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
