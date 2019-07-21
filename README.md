@@ -18,6 +18,7 @@
 * 重量级 MMORPG 框架目前不在此讨论范围内🤣
 
 Server 端项目源码分析对象
+  * [go-websocket](https://github.com/owenliang/go-websocket)
   * [go-push](https://github.com/owenliang/go-push)
   * [NanoServer](https://github.com/lonng/nanoserver)
   * 大家也可以直接看源码学习，不用管我下面👇的废话🤣（快速应用于自己业务线才是最重要的）
