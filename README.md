@@ -35,7 +35,7 @@ Server 端项目源码分析对象
 
 ### 快速上手 GO & WebSocket
 
-视频教程：[GO实现千万级WebSocket消息推送服务](https://github.com/owenliang/go-push)
+视频教程：[GO实现千万级WebSocket消息推送服务](https://www.imooc.com/learn/1025)
 * 非常好的扫盲教程
 * 如果你从来没有接触过 WebSocket，那么你一定要看一下
 
