@@ -163,6 +163,7 @@ Go
 隐藏细节
 * 封装Connection结构，隐藏 WebSocket 底层连接
 * 封装Connection的API，提供 Send/Read/Close 等线程安全接口
+* 这里会有编码与思考的脑图(ToDo)
 
 API原理
 * SendMessage 将消息投递到 out channel
@@ -172,6 +173,22 @@ API原理
 内部原理
 * 启动读协程，循环读取WebSocket，将消息投递到 in channel
 * 启动写协程，循环读取 out channel，将消息写给WebSocket
+
+#### 千万级弹幕系统的架构秘密 
+
+分析技术难点：
+
+3个性能瓶颈
+* 内核瓶颈
+* 锁瓶颈
+* CPU瓶颈
+
+内核瓶颈
+* 推送量大：100万在线 * 10条/秒 = 1000万条/秒
+* linux 内核发送 TCP 的极限包频 ≈ 100万条/秒
+
+--------------------------------
+
 
 ### Nano 基本术语脑图
 脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
