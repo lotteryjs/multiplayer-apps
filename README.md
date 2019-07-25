@@ -296,10 +296,6 @@ CPU-优化方案
 
 ![nano-get-started](images/nano-get-started.png)
 
-### NanoServer
-
-**接下来，进入实际业务分析和代码解析了哈~~**
-
-### NanoServer 表结构
+### NanoServer 业务表结构
 
 ![tables](./images/nanoserver-tables.png)
