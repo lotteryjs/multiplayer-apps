@@ -39,9 +39,10 @@ Server 端项目源码分析对象
   * [NanoServer](https://github.com/lonng/nanoserver)
   * 大家也可以直接看源码学习，不用管我下面👇的废话🤣（快速应用于自己业务线才是最重要的）
 
-为什么选择 Nano？
+为什么选择 NanoServer？
 
 * 很多项目很美，但并没有提供一个合适(太大 or 太小)的、完整的、可应用于生产的的业务示例(也许是我没有找到合适的🤦‍♀️)
+* 完完整整的了解了一个真实的业务并编码，对我们再去开发其它实时应用是非常有帮助的
 
 针对 Apk：[Android逆向破解：Android Killer使用](https://www.jianshu.com/p/61a93a6c0c1b)
 
