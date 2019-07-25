@@ -298,4 +298,6 @@ CPU-优化方案
 
 ### NanoServer 业务表结构
 
+**[TABLES-->>](https://lotteryjs.github.io/golang-server-dev/nanoserver-tables.html)**
+
 ![tables](./images/nanoserver-tables.png)
