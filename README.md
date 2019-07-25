@@ -46,9 +46,10 @@ Server 端项目源码分析对象
 * 很多项目很美，但并没有提供一个合适(太大 or 太小)的、完整的、可应用于生产的的业务示例(也许是我没有找到合适的🤦‍♀️)
 * 完完整整的了解了一个真实的业务并编码，对我们再去开发其它实时应用是非常有帮助的
 
-针对 Apk：
+针对 Apk 反编译：
 * [Android逆向破解：Android Killer使用](https://www.jianshu.com/p/61a93a6c0c1b)
 * [[Android Tools] AndroidKiller安装、设置及使用教程4月15日网盘文件有更新(2019.6.21更新下载地址)](https://www.52pojie.cn/forum.php?mod=viewthread&tid=726176&page=1)
+* [输入Javac提示不是内部或外部命令](https://jingyan.baidu.com/article/08b6a591bdb18314a80922a0.html)
 
 由于客户端并没有开源（比较蛋疼🤦‍♀️）
 
