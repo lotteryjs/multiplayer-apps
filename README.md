@@ -53,7 +53,8 @@ Server 端项目源码分析对象
 
 由于客户端并没有开源（比较蛋疼🤦‍♀️）
 
-我这边会陆陆续续使用 [Cocos Creator](https://www.cocos.com/creator) 去开发一套完整的客户端并且开源。
+* 想法1：我这边会陆陆续续使用 [Cocos Creator](https://www.cocos.com/creator) 去开发一套完整的客户端并且开源。
+* 想法2：使用 [redux](https://github.com/reduxjs/redux)(状态管理) + [redux-saga](https://github.com/redux-saga/redux-saga)(游戏逻辑管理)
 
 ### 快速上手 GO & WebSocket
 
