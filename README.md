@@ -29,6 +29,7 @@ Q：一个完整的，较复杂的，可应用于生产的高性能(Golang)实�
 * [快速上手 GO & WebSocket](#快速上手-GO-&-WebSocket)
 * [Nano 基本术语脑图](#Nano-基本术语脑图)
 * [starx-chat-demo 详解](#快速理解-starx-chat-demo)
+  * [starx-chat-demo](https://github.com/lonng/nano/tree/master/examples/demo/chat)
 * [Nano 通信协议详解](#Nano-通信协议详解)
 * [NanoServer 业务分析](#NanoServer-业务分析)
 * [NanoServer 业务表结构](#NanoServer-业务表结构)
@@ -317,6 +318,7 @@ CPU-优化方案
 
 ### 快速理解 starx-chat-demo
 
+[starx-chat-demo](https://github.com/lonng/nano/tree/master/examples/demo/chat)
 
 ### Nano 通信协议详解
 ToDo……
