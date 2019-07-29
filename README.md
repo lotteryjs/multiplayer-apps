@@ -32,8 +32,7 @@ Q：一个完整的，较复杂的，可应用于生产的高性能(Golang)实�
   * [starx-chat-demo](https://github.com/lonng/nano/tree/master/examples/demo/chat)-->`注意: 当前作者估计太忙，所以里面留了两个门槛，注意修改，不然你跑不起来🤦‍♀️。将 nano.ListenWS 修改为 nano.Listen。 在 nano.Listen 传参里面加上 nano.WithIsWebsocket(true)。[不然它就 net.Listen("tcp", n.ClientAddr)，这区别就大了去了🤦‍♀️]`
 * [Nano 通信协议详解](#Nano-通信协议详解)
   * 如何针对特有的项目封装一套合适的通信协议？
-* [NanoServer 业务分析](#NanoServer-业务分析)
-* [NanoServer 业务表结构](#NanoServer-业务表结构)
+* [NanoServer 游戏服务器业务分析](#NanoServer-游戏服务器业务分析)
 
 ### 本笔记📒阅读前置知识
 
@@ -332,13 +331,13 @@ CPU-优化方案
 ### Nano 通信协议详解
 ToDo……
 
-### NanoServer 业务分析
+### NanoServer 游戏服务器业务分析
 
 `复杂的逻辑与技术使用的前提是：你需要一个复杂的业务场景`
 
 ![nanoserver-1.png](./images/nanoserver-1.png)
 
-### NanoServer 业务表结构
+#### NanoServer 业务表结构
 
 **[TABLES](https://lotteryjs.github.io/golang-server-dev/nanoserver-tables.html)**
 
