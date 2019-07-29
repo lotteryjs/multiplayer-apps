@@ -48,9 +48,9 @@ Server 端项目源码分析对象
 
 针对 Apk 反编译(`笔者目前对 .luac 文件并没有解密`)：
 * ~~[Android逆向破解：Android Killer使用](https://www.jianshu.com/p/61a93a6c0c1b)~~
-* [[Android Tools] AndroidKiller安装、设置及使用教程4月15日网盘文件有更新(2019.6.21更新下载地址)](https://www.52pojie.cn/forum.php?mod=viewthread&tid=726176&page=1)
-* [输入Javac提示不是内部或外部命令](https://jingyan.baidu.com/article/08b6a591bdb18314a80922a0.html)
-* [cocos-luac 游戏逆向破解反编译的一些启示]()
+* ~~[[Android Tools] AndroidKiller安装、设置及使用教程4月15日网盘文件有更新(2019.6.21更新下载地址)](https://www.52pojie.cn/forum.php?mod=viewthread&tid=726176&page=1)~~
+* ~~[输入Javac提示不是内部或外部命令](https://jingyan.baidu.com/article/08b6a591bdb18314a80922a0.html)~~
+* ~~[cocos-luac 游戏逆向破解反编译的一些启示](https://segmentfault.com/a/1190000018100386)~~
 
 由于客户端并没有开源（比较蛋疼🤦‍♀️）
 
