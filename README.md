@@ -312,7 +312,7 @@ CPU-优化方案
 
 
 ### Nano 基本术语脑图
-脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 来整理的。
+脑图是根据 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md)(注意仔细阅读这篇文章) 来整理的。
 
 ![nano-get-started](images/nano-get-started.png)
 
