@@ -24,13 +24,15 @@ Q：一个完整的，较复杂的，可应用于生产的高性能(Golang)实�
   * [draw.io](https://www.draw.io/)
   * [百度脑图](https://naotu.baidu.com/)
 
-### Golang 实时应用开发(打怪升级)目录
+### Go 实时应用开发打怪升级指南 (゜-゜)つロ 干杯~🤣
 * [本笔记📒阅读前置知识](#本笔记📒阅读前置知识)
 * [快速上手 GO & WebSocket](#快速上手-GO-&-WebSocket)
 * [Nano 基本术语脑图](#Nano-基本术语脑图)
 * [starx-chat-demo 详解](#快速理解-starx-chat-demo)
   * [starx-chat-demo](https://github.com/lonng/nano/tree/master/examples/demo/chat)-->`注意: 当前作者估计太忙，所以里面留了两个门槛，注意修改，不然你跑不起来🤦‍♀️。将 nano.ListenWS 修改为 nano.Listen。 在 nano.Listen 传参里面加上 nano.WithIsWebsocket(true)。[不然它就 net.Listen("tcp", n.ClientAddr)，这区别就大了去了🤦‍♀️]`
+  * 业务分析
 * [Nano 通信协议详解](#Nano-通信协议详解)
+  * 如何针对特有的项目封装一套合适的通信协议？
 * [NanoServer 业务分析](#NanoServer-业务分析)
 * [NanoServer 业务表结构](#NanoServer-业务表结构)
 
@@ -324,7 +326,9 @@ CPU-优化方案
   * 将`nano.ListenWS` 修改为 `nano.Listen`。
   * 在 `nano.Listen` 传参里面加上 `nano.WithIsWebsocket(true)`。不然它就 `net.Listen("tcp", n.ClientAddr)`，这区别就大了去了🤦‍♀️。
 
-通过 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 我们知道，
+#### 业务分析
+
+通过 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 我们知道
 
 ### Nano 通信协议详解
 ToDo……
