@@ -73,7 +73,7 @@ Server 端项目源码分析对象
 
 #### 什么是推送系统？
 
-![push1](./websocket/images/push1.png)
+![push1](./images/go-websocket/push1.png)
 
 #### 弹幕系统的技术挑战
 
@@ -107,7 +107,7 @@ N 个直播间
 
 #### WebSocket 协议与交互(`必备基础`)
 
-![websocket](./websocket/images/websocket.png)
+![websocket](./images/go-websocket/websocket.png)
 
 传输原理
 
@@ -136,9 +136,9 @@ N 个直播间
   * Down下来，自己感受一下
   * 后续，我会弄成一个 Docker Image(ToDo)
 
-![devtool-1](./websocket/images/devtool-1.png)
+![devtool-1](./images/go-websocket/devtool-1.png)
 
-![devtool-2](./websocket/images/devtool-2.png)
+![devtool-2](./images/go-websocket/devtool-2.png)
 
 #### 服务端的技术选型与考虑
 
@@ -257,7 +257,7 @@ CPU-优化方案
 * json编码前置，1次消息编码 + 100万次推送
 * 消息合并前置，N条消息合并后只编码一次
 
-![单机架构](./websocket/images/single-arc.png)
+![单机架构](./images/go-websocket/single-arc.png)
 
 分布式架构
 
@@ -280,7 +280,7 @@ CPU-优化方案
   * 都去各自去做判断，各自去做推送
 
 
-![网关集群架构](./websocket/images/arc2.png)
+![网关集群架构](./images/go-websocket/arc2.png)
 
 所以这里涉及一个往网关层的一个广播，谁来做？逻辑集群
 
@@ -295,7 +295,7 @@ CPU-优化方案
 
 整体架构
 
-![整体架构](./websocket/images/arc3.png)
+![整体架构](./images/go-websocket/arc3.png)
 
 --------------------------------
 
