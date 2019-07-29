@@ -51,6 +51,7 @@ Server 端项目源码分析对象
 * ~~[[Android Tools] AndroidKiller安装、设置及使用教程4月15日网盘文件有更新(2019.6.21更新下载地址)](https://www.52pojie.cn/forum.php?mod=viewthread&tid=726176&page=1)~~
 * ~~[输入Javac提示不是内部或外部命令](https://jingyan.baidu.com/article/08b6a591bdb18314a80922a0.html)~~
 * ~~[cocos-luac 游戏逆向破解反编译的一些启示](https://segmentfault.com/a/1190000018100386)，然并卵🤦‍♀️~~
+* ~~游戏 `apk` 所使用的通信协议不是 websocket，O__O "…，传输的包也是加过密的，所以用工具抓包……hahahaha~然并卵🤦‍♀️~~
 * 不过呢，还是感谢，感谢，感谢作者提供如此优秀的服务器源码
 
 由于客户端并没有开源（比较蛋疼🤦‍♀️）
