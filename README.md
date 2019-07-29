@@ -43,9 +43,11 @@ Q：一个完整的，较复杂的，可应用于生产的高性能(Golang)实�
 本系列教程将以 [Nano](https://github.com/lonng/nano)(Lightweight, facility, high performance golang based game server framework) 项目为探索对象。
 
 * 它是一个轻量级的项目，可以很好的让我们入门 ` Golang 高实时 Web 应用`
+* [Nano](https://github.com/lonng/nano) 应用是由一些松散耦合的 Component 组成的，每个 Component 完成一些功能。整个应用可以看作是一个 Component 容器，完成 Component 的加载以及生命周期管理。
+* React Component, Vue Component, Angular Component -> I love Component 🤣
 * 重量级 MMORPG 框架目前不在此讨论范围内🤣
 
-Server 端项目源码分析对象
+可用于学习的 Server 端项目源码
   * [go-websocket](https://github.com/owenliang/go-websocket)
   * [go-push](https://github.com/owenliang/go-push)
   * [NanoServer](https://github.com/lonng/nanoserver)
@@ -326,7 +328,8 @@ CPU-优化方案
 
 #### 业务分析
 
-通过 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 我们知道
+通过 [如何构建你的第一个nano应用](https://github.com/lonng/nano/blob/master/docs/get_started_zh_CN.md) 我们知道：
+> nano 应用是由一些松散耦合的 Component 组成的，每个 Component 完成一些功能。整个应用可以看作是一个 Component 容器，完成 Component 的加载以及生命周期管理。每个 Component 往往有 Init，AfterInit，BeforeShutdown，Shutdown 等方法，用来完成生命周期管理。
 
 ### Nano 通信协议详解
 ToDo……
