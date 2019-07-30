@@ -1,7 +1,7 @@
 # 探索 Golang 高实时、分布式应用服务端编程
 
 ### 目标：用 Go 折腾个可用于生产的实时应用(゜-゜)つロ 干杯~🤣
-* [本笔记📒阅读前置知识](#本笔记📒阅读前置知识)
+* [本笔记📒阅读前置知识](#本笔记阅读前置知识)
 * [快速上手 GO & WebSocket](#快速上手-GO-&-WebSocket)
 * [Nano 基本术语脑图](#Nano-基本术语脑图)
 * [通过 starx-chat-demo 快速上手 Nano](#通过-starx-chat-demo-快速上手-Nano)
@@ -24,7 +24,7 @@
 * [draw.io](https://www.draw.io/)
 * [百度脑图](https://naotu.baidu.com/)
 
-### 本笔记📒阅读前置知识
+### 本笔记阅读前置知识
 
 * 感兴趣就好(不懂的知识 `Google` 都会给你🆙)
 * 基本的服务端知识(最好有 Golang 基础)
