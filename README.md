@@ -326,6 +326,7 @@ CPU-优化方案
   * 特定场所抽象为 `Room`，各自的言论我们称之为 `session`，这些  `session` 的管理抽象为 `Group`，理所当然它是属于 `Room`的
   * 多个特定场所，各自不同的人群管理呢？
     * 我们可以抽象出一个 `RoomManager` 来管理这一堆的 `Room`
+    * `RoomManager` 它是 `nano` 组件
 
 ### Nano 通信协议详解
 ToDo……
