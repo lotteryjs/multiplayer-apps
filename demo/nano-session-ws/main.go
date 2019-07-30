@@ -7,6 +7,7 @@ import (
 
 	"github.com/lonng/nano"
 	"github.com/lonng/nano/component"
+	"github.com/lonng/nano/serialize/json"
 	"github.com/lonng/nano/session"
 )
 
@@ -53,10 +54,10 @@ func (r *Room) AfterInit() {
 func (r *Room) Join(s *session.Session, msg []byte) error {
 	s.Bind(s.ID()) // binding session uid
 	s.Push("onMembers", &AllMembers{Members: r.group.Members()})
-	// notify others
+	// // notify others
 	r.group.Broadcast("onNewUser", &NewUser{Content: fmt.Sprintf("New user: %d", s.ID())})
-	// new user join group
-	r.group.Add(s) // add session to group
+	// // new user join group
+	// r.group.Add(s) // add session to group
 	return s.Response(&JoinResponse{Result: "sucess"})
 }
 
@@ -76,5 +77,6 @@ func main() {
 	nano.Listen(":2828",
 		nano.WithComponents(components),
 		nano.WithWSPath("/ws"),
-		nano.WithIsWebsocket(true))
+		nano.WithIsWebsocket(true),
+		nano.WithSerializer(json.NewSerializer()))
 }
