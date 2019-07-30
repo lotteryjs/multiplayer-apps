@@ -21,11 +21,11 @@ func (r *Demo) AfterInit() {
 }
 
 func (r *Demo) BeforeShutdown() {
-	log.Print("BeforeShutdown")
+	log.Print("Demo.BeforeShutdown")
 }
 
 func (r *Demo) Shutdown() {
-	log.Print("Shutdown")
+	log.Print("Demo.Shutdown")
 }
 
 // 以下的Handler不会自动将消息反序列化，会将客户端发送过来的消息直接当作参数传进来
