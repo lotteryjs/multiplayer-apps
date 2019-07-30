@@ -4,7 +4,7 @@
 * [本笔记📒阅读前置知识](#本笔记📒阅读前置知识)
 * [快速上手 GO & WebSocket](#快速上手-GO-&-WebSocket)
 * [Nano 基本术语脑图](#Nano-基本术语脑图)
-* [starx-chat-demo 详解](#快速理解-starx-chat-demo)
+* [通过 starx-chat-demo 快速上手 Nano](#通过-starx-chat-demo-快速上手-Nano)
 * [Nano 通信协议详解](#Nano-通信协议详解)
 * [NanoServer 游戏服务器业务分析](#NanoServer-游戏服务器业务分析)
 
@@ -308,7 +308,7 @@ CPU-优化方案
 
 ![nano-get-started](images/nano-get-started.png)
 
-### 快速理解 starx-chat-demo
+### 通过 starx-chat-demo 快速上手 Nano
 
 [starx-chat-demo](https://github.com/lonng/nano/tree/master/examples/demo/chat)
 
@@ -326,7 +326,7 @@ CPU-优化方案
   * 特定场所抽象为 `Room`，各自的言论我们称之为 `session`，这些  `session` 的管理抽象为 `Group`，理所当然它是属于 `Room`的
   * 多个特定场所，各自不同的人群管理呢？
     * 我们可以抽象出一个 `RoomManager` 来管理这一堆的 `Room`
-    * `RoomManager` 它是 `nano` 组件
+    * `RoomManager` 它是一个 `nano` 组件，`nano` 将对它进行调度 
 
 ### Nano 通信协议详解
 ToDo……
