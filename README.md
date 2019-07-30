@@ -322,15 +322,17 @@ CPU-优化方案
 > nano 应用是由一些松散耦合的 Component 组成的，每个 Component 完成一些功能。整个应用可以看作是一个 Component 容器，完成 Component 的加载以及生命周期管理。每个 Component 往往有 Init，AfterInit，BeforeShutdown，Shutdown 等方法，用来完成生命周期管理。
 
 两个场景：
-1. 用户加入房间：
-  * 绑定用户id到Session
-  * Session 中绑定当前房间，方便用户某一时刻在当前房间内广播📢消息
-  * 推送房间内的其他成员 (UID) 到当前用户
-  * 房间内广播其它成员有新用户加入
-  * 将当前用户 Session 添加到房间 Session 管理者 Group
-2. 用户发消息：
-  * 用户(Session)是否已经加入房间
-  * 拿到用户所在的房间，广播📢消息
+
+A. 用户加入房间：
+  1. 绑定用户id到Session
+  2. Session 中绑定当前房间，方便用户某一时刻在当前房间内广播📢消息
+  3. 推送房间内的其他成员 (UID) 到当前用户
+  4. 房间内广播其它成员有新用户加入
+  5. 将当前用户 Session 添加到房间 Session 管理者 Group
+
+B. 用户发消息：
+  1. 用户(Session)是否已经加入房间
+  2. 拿到用户所在的房间，广播📢消息
 
 ### Nano 通信协议详解
 ToDo……
