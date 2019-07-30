@@ -28,6 +28,7 @@ func (r *Demo) Shutdown() {
 	log.Print("Shutdown")
 }
 
+// 以下的Handler不会自动将消息反序列化，会将客户端发送过来的消息直接当作参数传进来
 func (r *Demo) Join(s *session.Session, raw []byte) error {
 	fmt.Printf("%v", s)
 	return nil
