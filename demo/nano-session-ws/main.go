@@ -10,13 +10,59 @@ import (
 	"github.com/lonng/nano/session"
 )
 
-type Room struct {
-	component.Base
+type (
+	// define component
+	Room struct {
+		component.Base
+		group *nano.Group
+	}
+
+	// protocol messages
+	UserMessage struct {
+		Name    string `json:"name"`
+		Content string `json:"content"`
+	}
+
+	NewUser struct {
+		Content string `json:"content"`
+	}
+
+	AllMembers struct {
+		Members []int64 `json:"members"`
+	}
+
+	JoinResponse struct {
+		Code   int    `json:"code"`
+		Result string `json:"result"`
+	}
+)
+
+func NewRoom() *Room {
+	return &Room{
+		group: nano.NewGroup("room"),
+	}
 }
 
-func (r *Room) Join(s *session.Session, raw []byte) error {
-	fmt.Printf("%s", s)
-	return nil
+func (r *Room) AfterInit() {
+	session.Lifetime.OnClosed(func(s *session.Session) {
+		r.group.Leave(s)
+	})
+}
+
+// Join room
+func (r *Room) Join(s *session.Session, msg []byte) error {
+	s.Bind(s.ID()) // binding session uid
+	s.Push("onMembers", &AllMembers{Members: r.group.Members()})
+	// notify others
+	r.group.Broadcast("onNewUser", &NewUser{Content: fmt.Sprintf("New user: %d", s.ID())})
+	// new user join group
+	r.group.Add(s) // add session to group
+	return s.Response(&JoinResponse{Result: "sucess"})
+}
+
+// Send message
+func (r *Room) Message(s *session.Session, msg *UserMessage) error {
+	return r.group.Broadcast("onMessage", msg)
 }
 
 func main() {
