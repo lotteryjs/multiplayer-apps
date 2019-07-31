@@ -310,6 +310,8 @@ CPU-优化方案
 
 ### 通过 starx-chat-demo 快速上手 Nano
 
+开发要点：定义组件，注册组件，安装组件
+
 [starx-chat-demo](https://github.com/lonng/nano/tree/master/examples/demo/chat)
 
 `注意`: 当前作者估计太忙，所以里面留了两个门槛，注意修改，不然你跑不起来🤦‍♀️。
