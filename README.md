@@ -353,7 +353,7 @@ C. 输入输出流量统计
 
 [pomelo 协议格式](https://github.com/NetEase/pomelo/wiki/%E5%8D%8F%E8%AE%AE%E6%A0%BC%E5%BC%8F)
 
-两者完全一样，Nano 作者应该是直接用的网易 Pomelo 的这个规范🤣🤦‍♀️
+两者完全一样，Nano 作者应该是直接用的网易 Pomelo 的定义🤣🤦‍♀️
 
 
 
