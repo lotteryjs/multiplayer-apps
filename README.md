@@ -6,7 +6,7 @@
 * [Nano 基本术语脑图](#Nano-基本术语脑图)
 * [通过 starx-chat-demo 快速上手 Nano](#通过-starx-chat-demo-快速上手-Nano)
 * [Nano 路由压缩脑图](#Nano-路由压缩脑图)
-* [Nano 通信协议详解](#Nano-通信协议详解)
+* [Nano 通信协议脑图](#Nano-通信协议脑图)
 * [NanoServer 游戏服务器业务分析](#NanoServer-游戏服务器业务分析)
 
 技术
@@ -347,7 +347,7 @@ C. 输入输出流量统计
 
 ![Nano 路由压缩脑图](./images/nano/route-compress.png)
 
-### Nano 通信协议详解
+### Nano 通信协议脑图
 
 [协议格式](https://github.com/lonng/nano/blob/master/docs/communication_protocol_zh_CN.md)
 
