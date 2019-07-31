@@ -348,7 +348,14 @@ C. 输入输出流量统计
 ![Nano 路由压缩脑图](./images/nano/route-compress.png)
 
 ### Nano 通信协议详解
-ToDo……
+
+[协议格式](https://github.com/lonng/nano/blob/master/docs/communication_protocol_zh_CN.md)
+
+[pomelo 协议格式](https://github.com/NetEase/pomelo/wiki/%E5%8D%8F%E8%AE%AE%E6%A0%BC%E5%BC%8F)
+
+两者完全一样，Nano 作者应该是直接用的网易 Pomelo 的这个规范🤣🤦‍♀️
+
+
 
 ### NanoServer 游戏服务器业务分析
 
