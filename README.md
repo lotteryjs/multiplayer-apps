@@ -355,7 +355,7 @@ C. 输入输出流量统计
 
 两者完全一样，Nano 作者应该是直接用的网易 Pomelo 的定义🤣🤦‍♀️
 
-
+![communication-protocol](./images/nano/communication-protocol.png)
 
 ### NanoServer 游戏服务器业务分析
 
