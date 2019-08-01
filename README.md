@@ -363,6 +363,8 @@ C. 输入输出流量统计
 
 ![nanoserver-1.png](./images/nanoserver-1.png)
 
+![nano-server-client4.png](./images/nano-server-client4.png)
+
 #### NanoServer 业务表结构
 
 **[TABLES](https://lotteryjs.github.io/golang-server-dev/nanoserver-tables.html)**
