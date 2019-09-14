@@ -8,7 +8,7 @@
 * [Nano 路由压缩脑图](#Nano-路由压缩脑图)
 * [Nano 通信协议脑图](#Nano-通信协议脑图)
 * [NanoServer 游戏服务器业务分析](#NanoServer-游戏服务器业务分析)
-* [Nano Cluster Example 分析](#Nano-Cluster-Example-分析)
+* [Nano 分布式 Chat Demo 快速上手](#Nano-分布式-Chat-Demo-快速上手)
 
 技术
 * 生产工具，就像斧子、铲子一样
@@ -372,4 +372,14 @@ C. 输入输出流量统计
 
 ![tables](./images/nanoserver-tables.png)
 
-#### Nano Cluster Example 分析
+#### Nano-分布式-Chat-Demo-快速上手
+
+See: [The distributed chat demo](https://github.com/lonng/nano/tree/master/examples/cluster)
+
+跑起来：
+
+```sh
+go run main.go master
+go run main.go chat --listen "127.0.0.1:34580"
+go run main.go gate --listen "127.0.0.1:34570" --gate-address "127.0.0.1:34590"
+```
