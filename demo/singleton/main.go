@@ -7,7 +7,6 @@ import (
 	"sync"
 	"time"
 
-	_ "github.com/go-sql-driver/mysql"
 	"github.com/lotteryjs/golang-server-dev/demo/singleton/internal/game"
 	"github.com/lotteryjs/golang-server-dev/demo/singleton/internal/web"
 	log "github.com/sirupsen/logrus"
