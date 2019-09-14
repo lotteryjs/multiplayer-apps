@@ -1,0 +1,44 @@
+[core]
+debug = true
+heartbeat = 30
+
+[webserver]
+addr = "0.0.0.0:12307"
+enable_ssl = false
+static_dir = "web/static"
+
+[webserver.certificates]
+cert = "configs/****.crt"
+key = "configs/****.key"
+
+[game-server]
+host = "127.0.0.1"
+port = 33251
+
+[redis]
+host = "127.0.0.1"
+port = 6357
+
+[database]
+host = "127.0.0.1"
+port = 3306
+dbname = "scmj"
+password = "123456"
+username = "root"
+args = "charset=utf8mb4"
+buf_size = 10
+max_idle_conns = 20
+max_open_conns = 15
+show_sql = true
+
+[token]
+expires = 21600
+
+[whitelist]
+ip = ["10.10.*", "127.0.0.1", ".*"]
+
+[broadcast]
+message = ["系统消息：游戏人生", "欢迎进入游戏"]
+
+[login]
+guest = true
