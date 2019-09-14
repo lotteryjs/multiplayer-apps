@@ -379,6 +379,8 @@ See: [The distributed chat demo](https://github.com/lonng/nano/tree/master/examp
 跑起来：
 
 ```sh
+cd examples/cluster
+
 go run main.go master
 go run main.go chat --listen "127.0.0.1:34580"
 go run main.go gate --listen "127.0.0.1:34570" --gate-address "127.0.0.1:34590"
