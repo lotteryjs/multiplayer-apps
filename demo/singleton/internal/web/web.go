@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/lotteryjs/golang-server-dev/demo/singleton/db"
+	"github.com/lotteryjs/golang-server-dev/demo/singleton/pkg/whitelist"
 	"github.com/spf13/viper"
 )
 
@@ -23,10 +24,17 @@ func dbStartup() func() {
 		db.ShowSQL(viper.GetBool("database.show_sql")))
 }
 
+func enableWhiteList() {
+	whitelist.Setup(viper.GetStringSlice("whitelist.ip"))
+}
+
 func Startup() {
 	// setup database
 	closer := dbStartup()
 	defer closer()
+
+	// enable white list
+	enableWhiteList()
 
 	fmt.Println("Web Server Startup")
 }
