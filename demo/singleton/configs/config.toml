@@ -38,7 +38,7 @@ expires = 21600
 ip = ["10.10.*", "127.0.0.1", ".*"]
 
 [broadcast]
-message = ["系统消息：游戏人生", "欢迎进入游戏"]
+message = ["Hello,Boy!", "Welcome^_^"]
 
 [login]
 guest = true
