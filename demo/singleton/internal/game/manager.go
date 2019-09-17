@@ -59,7 +59,6 @@ func (m *Manager) Login(s *session.Session, req *protocol.LoginToGameServerReque
 		Nickname: req.Name,
 		Sex:      req.Sex,
 		HeadUrl:  req.HeadUrl,
-		FangKa:   req.FangKa,
 	}
 
 	return s.Response(res)

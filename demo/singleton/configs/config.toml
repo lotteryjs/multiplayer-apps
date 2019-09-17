@@ -22,7 +22,7 @@ port = 6357
 [database]
 host = "127.0.0.1"
 port = 3306
-dbname = "scmj"
+dbname = "singleton"
 password = "123456"
 username = "root"
 args = "charset=utf8mb4"
@@ -42,3 +42,4 @@ message = ["Hello,Boy!", "Welcome^_^"]
 
 [login]
 guest = true
+lists = ["web", "app"]

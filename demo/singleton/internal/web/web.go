@@ -10,6 +10,7 @@ import (
 
 	"github.com/lonng/nex"
 	"github.com/lotteryjs/golang-server-dev/demo/singleton/db"
+	"github.com/lotteryjs/golang-server-dev/demo/singleton/internal/web/api"
 	"github.com/lotteryjs/golang-server-dev/demo/singleton/pkg/algoutil"
 	"github.com/lotteryjs/golang-server-dev/demo/singleton/pkg/whitelist"
 	log "github.com/sirupsen/logrus"
@@ -56,6 +57,7 @@ func startupService() http.Handler {
 	)
 
 	nex.Before(logRequest)
+	mux.Handle("/v1/user/", api.MakeLoginService())
 
 	mux.Handle("/v1/test", nex.Handler(
 		func() (string, error) {

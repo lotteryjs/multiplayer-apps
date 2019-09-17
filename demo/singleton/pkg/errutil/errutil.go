@@ -33,7 +33,6 @@ var (
 	ErrInvalidParameter      = errors.New("invalid parameter")
 	ErrRequestFailed         = errors.New("request failed")
 	ErrIllegalOrderType      = errors.New("illegal order type")
-	ErrCoinNotEnough         = errors.New("youxian coin not enough")
 	ErrFrequencyLimited      = errors.New("frequency limited")
 	ErrVerifyFailed          = errors.New("verify failed")
 	ErrSignFailed            = errors.New("sign failed")

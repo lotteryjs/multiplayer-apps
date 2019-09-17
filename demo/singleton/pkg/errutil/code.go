@@ -35,7 +35,6 @@ const (
 	yxInvalidParameter
 	yxRequestFailed
 	yxIllegalOrderType
-	yxCoinNotEnough
 	yxFrequencyLimited
 	yxVerifyFailed
 	yxSignFailed
@@ -81,7 +80,6 @@ var errs = map[error]int{
 	ErrInvalidParameter:      yxInvalidParameter,
 	ErrRequestFailed:         yxRequestFailed,
 	ErrIllegalOrderType:      yxIllegalOrderType,
-	ErrCoinNotEnough:         yxCoinNotEnough,
 	ErrFrequencyLimited:      yxFrequencyLimited,
 	ErrVerifyFailed:          yxVerifyFailed,
 	ErrSignFailed:            yxSignFailed,

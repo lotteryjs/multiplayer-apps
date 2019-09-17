@@ -135,6 +135,8 @@ func MustStartup(dsn string, opts ...ModelOption) func() {
 
 func syncSchema() {
 	database.StoreEngine("InnoDB").Sync2(
-		new(model.Uuid),
+		new(model.User),
+		new(model.Register),
+		new(model.Login),
 	)
 }

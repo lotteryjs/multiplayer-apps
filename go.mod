@@ -6,6 +6,7 @@ require (
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/go-xorm/core v0.6.0
 	github.com/go-xorm/xorm v0.7.0
+	github.com/gorilla/mux v1.7.3
 	github.com/lonng/nano v0.4.1-0.20190830002452-0fe2e5bec196
 	github.com/lonng/nex v1.4.1
 	github.com/sirupsen/logrus v1.4.2
