@@ -1,0 +1,13 @@
+### /v1/user/login/query
+POST http://127.0.0.1:9035/v1/user/login/query
+content-type: application/json
+
+{"appId":"singleton","channelId":"singleton"}
+
+### /v1/user/login/guest
+POST http://127.0.0.1:9035/v1/user/login/guest
+content-type: application/json
+
+{"channelId":"singleton","appId":"singleton","imei":"ffffffff-9b4c-078e-5063-b0ca30e3d509"}
+
+

@@ -3,7 +3,7 @@ debug = true
 heartbeat = 30
 
 [webserver]
-addr = "0.0.0.0:12307"
+addr = "0.0.0.0:9035"
 enable_ssl = false
 static_dir = "web/static"
 
@@ -13,7 +13,7 @@ key = "configs/****.key"
 
 [game-server]
 host = "127.0.0.1"
-port = 33251
+port = 9036
 
 [redis]
 host = "127.0.0.1"
@@ -42,4 +42,4 @@ message = ["Hello,Boy!", "Welcome^_^"]
 
 [login]
 guest = true
-lists = ["web", "app"]
+lists = ["singleton", "web", "app"]
