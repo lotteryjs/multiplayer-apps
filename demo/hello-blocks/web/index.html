@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello-Blocks</title>
+</head>
+<body>
+<script src="./js/protocol.js"></script>
+<script src="./js/nano-websocket-client.js"></script>
+<script>
+class Game {
+  constructor() {
+    this.nano = window.nano;
+    console.log('Init Game~')
+  }
+  connectToServer() {
+    this.nano.init({
+      host: '127.0.0.1',
+      port: '3575',
+      path: '/game'
+    }, function() {
+      console.log('connected~')
+    })
+  }
+  start() {
+    console.log('Game Start')
+    this.connectToServer()
+  }
+}
+window.onload = function() {
+  console.log('client~')
+  var game = new Game()
+  game.start()
+}
+</script>
+</body>
+</html>
