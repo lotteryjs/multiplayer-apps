@@ -1,4 +1,7 @@
-# 探索 Golang 高实时、分布式应用服务端编程
+# 探索基于 Golang 分布式应用
+
+### Blockchain
+[blockchain-tutorial](https://liuchengxu.gitbook.io/blockchain)
 
 ### 目标：用 Go 折腾个可用于生产的实时应用(゜-゜)つロ 干杯~🤣
 * [本笔记📒阅读前置知识](#本笔记阅读前置知识)
