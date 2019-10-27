@@ -1,7 +1,10 @@
 # 探索基于 Golang 分布式应用
 
 ### Blockchain
-[blockchain-tutorial](https://liuchengxu.gitbook.io/blockchain)
+
+**区块链技术快速入门：**
+* 中文教程：[blockchain-tutorial](https://liuchengxu.gitbook.io/blockchain)
+* 英文原版：[blockchain_go](https://github.com/Jeiwan/blockchain_go)
 
 ------------------------------------
 ### 目标：用 Go 折腾个可用于生产的实时应用(゜-゜)つロ 干杯~🤣
