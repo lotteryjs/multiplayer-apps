@@ -4,7 +4,7 @@
 
 **区块链技术快速入门：**
 * 中文教程：[blockchain-tutorial](https://liuchengxu.gitbook.io/blockchain)
-* 英文原版(A simplified blockchain implementation in Golang)：[blockchain_go](https://github.com/Jeiwan/blockchain_go)
+* 英文原教程及项目代码(A simplified blockchain implementation in Golang)：[blockchain_go](https://github.com/Jeiwan/blockchain_go)
 
 ------------------------------------
 ### 目标：用 Go 折腾个可用于生产的实时应用(゜-゜)つロ 干杯~🤣
