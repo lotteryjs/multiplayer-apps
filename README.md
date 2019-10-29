@@ -293,6 +293,38 @@
 -------------------
 **ws.go(package cluster)[cluster/]**
 - [ ] `type wsConn struct`
+- [ ] `func newWSConn(conn *websocket.Conn) (*wsConn, error)`
+- [ ] `func (c *wsConn) Read(b []byte) (int, error)`
+- [ ] `func (c *wsConn) Write(b []byte) (int, error)`
+- [ ] `func (c *wsConn) Close() error`
+- [ ] `func (c *wsConn) LocalAddr() net.Addr`
+- [ ] `func (c *wsConn) RemoteAddr() net.Addr`
+- [ ] `func (c *wsConn) SetDeadline(t time.Time) error`
+- [ ] `func (c *wsConn) SetReadDeadline(t time.Time) error`
+- [ ] `func (c *wsConn) SetWriteDeadline(t time.Time) error`
+
+**node.go(package cluster)[cluster/]**
+- [ ] `type Options struct`
+- [ ] `type Node struct`
+- [ ] `func (n *Node) Startup() error`
+- [ ] `func (n *Node) Handler() *LocalHandler`
+- [ ] `func (n *Node) initNode() error`
+- [ ] `func (n *Node) Shutdown()`
+- [ ] `func (n *Node) listenAndServe()`
+- [ ] `func (n *Node) listenAndServeWS()`
+- [ ] `func (n *Node) listenAndServeWSTLS()`
+- [ ] `func (n *Node) storeSession(s *session.Session)`
+- [ ] `func (n *Node) findSession(sid int64) *session.Session`
+- [ ] `func (n *Node) findOrCreateSession(sid int64, gateAddr string) (*session.Session, error)`
+- [ ] `func (n *Node) HandleRequest(_ context.Context, req *clusterpb.RequestMessage) (*clusterpb.MemberHandleResponse, error)`
+- [ ] `func (n *Node) HandleNotify(_ context.Context, req *clusterpb.NotifyMessage) (*clusterpb.MemberHandleResponse, error)`
+- [ ] `func (n *Node) HandlePush(_ context.Context, req *clusterpb.PushMessage) (*clusterpb.MemberHandleResponse, error)`
+- [ ] `func (n *Node) HandleResponse(_ context.Context, req *clusterpb.ResponseMessage) (*clusterpb.MemberHandleResponse, error)`
+- [ ] `func (n *Node) NewMember(_ context.Context, req *clusterpb.NewMemberRequest) (*clusterpb.NewMemberResponse, error)`
+- [ ] `func (n *Node) DelMember(_ context.Context, req *clusterpb.DelMemberRequest) (*clusterpb.DelMemberResponse, error)`
+- [ ] `func (n *Node) SessionClosed(_ context.Context, req *clusterpb.SessionClosedRequest) (*clusterpb.SessionClosedResponse, error)`
+- [ ] `func (n *Node) CloseSession(_ context.Context, req *clusterpb.CloseSessionRequest) (*clusterpb.CloseSessionResponse, error)`
+
 
 -------------------
 -------------------
