@@ -136,7 +136,7 @@
 - [ ] `func (s *Session) Restore(data map[string]interface{})`
 - [ ] `func (s *Session) Clear()`
 ----------------
-**session.go(package session)**
+**connection.go(package service)**
 - [ ] `var Connections = newConnectionService()`
 - [ ] `type connectionService struct`
 - [ ] `func newConnectionService() *connectionService`
