@@ -50,55 +50,55 @@
 - [ ] `ErrMemberNotFound     = errors.New("member not found in the group")`
 - [ ] `ErrSessionDuplication = errors.New("session has existed in the current group")`
 ---------
-**base.go(package component)**
+**base.go(package component)[component/]**
 - [ ] `type Base struct`
 - [ ] `func (c *Base) Init`
 - [ ] `func (c *Base) AfterInit`
 - [ ] `func (c *Base) BeforeShutdown`
 - [ ] `func (c *Base) Shutdown`
 
-**component.go(package component)**
+**component.go(package component)[component/]**
 - [ ] `type Component interface`
 
-**hub.go(package component)**
+**hub.go(package component)[component/]**
 - [ ] `type CompWithOptions struct`
 - [ ] `type Components struct`
 - [ ] `func (cs *Components) Register(c Component, options ...Option)`
 - [ ] `func (cs *Components) List() []CompWithOptions`
 
-**method.go(package component)**
+**method.go(package component)[component/]**
 - [ ] `func isExported(name string) bool`
 - [ ] `func isExportedOrBuiltinType(t reflect.Type) bool`
 - [ ] `func isHandlerMethod(method reflect.Method) bool`
 
-**options.go(package component)**
+**options.go(package component)[component/]**
 - [ ] `type options struct`
 - [ ] `type Option func(options *options)`
 - [ ] `func WithName(name string) Option`
 - [ ] `func WithNameFunc(fn func(string) string) Option`
 - [ ] `func WithSchedulerName(name string) Option`
 
-**service.go(package component)**
+**service.go(package component)[component/]**
 - [ ] `type Handler struct`
 - [ ] `type Service struct`
 - [ ] `type func NewService(comp Component, opts []Option) *Service`
 - [ ] `func (s *Service) suitableHandlerMethods(typ reflect.Type) map[string]*Handler`
 - [ ] `func (s *Service) ExtractHandler() error`
 ------------------
-**lifetime.go(package session)**
+**lifetime.go(package session)[session/]**
 - [ ] `type LifetimeHandler func(*Session)`
 - [ ] `type lifetime struct`
 - [ ] `var Lifetime = &lifetime{}`
 - [ ] `func (lt *lifetime) OnClosed(h LifetimeHandler)`
 - [ ] `func (lt *lifetime) Close(s *Session)`
 
-**router.go(package session)**
+**router.go(package session)[session/]**
 - [ ] `type Router struct`
 - [ ] `func newRouter() *Router`
 - [ ] `func (r *Router) Bind(service, address string)`
 - [ ] `func (r *Router) Find(service string) (string, bool)`
 
-**session.go(package session)**
+**session.go(package session)[session/]**
 - [ ] `type NetworkEntity interface`
 - [ ] `var ErrIllegalUID = errors.New("illegal uid")`
 - [ ] `type Session struct`
@@ -136,7 +136,7 @@
 - [ ] `func (s *Session) Restore(data map[string]interface{})`
 - [ ] `func (s *Session) Clear()`
 ----------------
-**connection.go(package service)**
+**connection.go(package service)[service/]**
 - [ ] `var Connections = newConnectionService()`
 - [ ] `type connectionService struct`
 - [ ] `func newConnectionService() *connectionService`
@@ -146,9 +146,69 @@
 - [ ] `func (c *connectionService) Reset`
 - [ ] `func (c *connectionService) SessionID`
 ----------------
-**serialize.go(package serialize)**
+**serialize.go(package serialize)[serialize/]**
+- [ ] `type Marshaler interface`
+- [ ] `type Unmarshaler interface`
+- [ ] `type Serializer interface`
 
+**json.go(package json)[serialize/json/]**
+- [ ] `type Serializer struct`
+- [ ] `func NewSerializer() *Serializer`
+- [ ] `func (s *Serializer) Marshal(v interface{}) ([]byte, error)`
+- [ ] `func (s *Serializer) Unmarshal(data []byte, v interface{}) error`
 
+**protobuf.go(package json)[serialize/protobuf/]**
+- [ ] `var ErrWrongValueType = errors.New("protobuf: convert on wrong type value")`
+- [ ] `type Serializer struct`
+- [ ] `func NewSerializer() *Serializer`
+- [ ] `func (s *Serializer) Marshal(v interface{}) ([]byte, error)`
+- [ ] `func (s *Serializer) Unmarshal(data []byte, v interface{}) error`
+------------------
+**scheduler.go(package scheduler)[scheduler/]**
+- [ ] `const messageQueueBacklog = 1 << 10`
+- [ ] `const sessionCloseBacklog = 1 << 8`
+- [ ] `type LocalScheduler interface`
+- [ ] `type Task func()`
+- [ ] `type Hook func()`
+- [ ] `var chDie = make(chan struct{})`
+- [ ] `var chExit = make(chan struct{})`
+- [ ] `var chTasks = make(chan Task, 1<<8)`
+- [ ] `var started int32`
+- [ ] `var closed  int32`
+- [ ] `func try(f func())`
+- [ ] `func Sched()`
+- [ ] `func Close()`
+- [ ] `func PushTask(task Task)`
+
+**timer.go(package scheduler)[scheduler/]**
+- [ ] `const infinite = -1`
+- [ ] `var timerManager = &struct`
+- [ ] `type TimerFunc func()`
+- [ ] `type TimerCondition interface`
+- [ ] `type Timer struct`
+- [ ] `func init()`
+- [ ] `func (t *Timer) ID() int64`
+- [ ] `func (t *Timer) Stop()`
+- [ ] `func safecall(id int64, fn TimerFunc)`
+- [ ] `func cron()`
+- [ ] `func NewTimer(interval time.Duration, fn TimerFunc) *Timer`
+- [ ] `func NewCountTimer(interval time.Duration, count int, fn TimerFunc) *Timer`
+- [ ] `func NewAfterTimer(duration time.Duration, fn TimerFunc) *Timer`
+- [ ] `func NewCondTimer(condition TimerCondition, fn TimerFunc) *Timer`
+-------------------
+**pipeline.go(package pipeline)[pipeline/]**
+- [ ] `type Message = message.Message`
+- [ ] `type Func func(s *session.Session, msg *message.Message) error`
+- [ ] `type Pipeline interface`
+- [ ] `type pipeline struct`
+- [ ] `type Channel interface`
+- [ ] `type pipelineChannel struct`
+- [ ] `func New() Pipeline`
+- [ ] `func (p *pipeline) Outbound() Channel`
+- [ ] `func (p *pipeline) Inbound() Channel`
+- [ ] `func (p *pipelineChannel) PushFront(h Func)`
+- [ ] `func (p *pipelineChannel) PushBack(h Func)`
+- [ ] `func (p *pipelineChannel) Process(s *session.Session, msg *message.Message) error`
 
 
 
