@@ -272,6 +272,9 @@
 - [ ] `func Decode(data []byte) (*Message, error)`
 - [ ] `func SetDictionary(dict map[string]uint16)`
 
+**util.go(package message)[internal/message/]**
+- [ ] `func Serialize(v interface{}) ([]byte, error)`
+
 -------------------
 -------------------
 -------------------
