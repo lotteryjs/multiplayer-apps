@@ -222,8 +222,18 @@
 - [ ] `func bytesToInt(b []byte) int`
 - [ ] `func intToBytes(n int) []byte`
 
-
-
+**env.go(package env)[internal/env/]**
+- [ ] `var Wd string`
+- [ ] `var Die chan bool`
+- [ ] `var Heartbeat time.Duration`
+- [ ] `var CheckOrigin func(*http.Request) bool`
+- [ ] `var Debug bool`
+- [ ] `var WSPath string`
+- [ ] `var TimerPrecision = time.Second`
+- [ ] `var GlobalTicker *time.Ticker`
+- [ ] `var Serializer serialize.Serializer`
+- [ ] `var GrpcOptions = []grpc.DialOption{grpc.WithInsecure()}`
+- [ ] `func init()`
 
 -------------------
 -------------------
