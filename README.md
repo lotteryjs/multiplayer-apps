@@ -290,6 +290,9 @@
 
 **runtime.go(package runtime)[internal/runtime/]**
 - [ ] `var CurrentNode *cluster.Node`
+-------------------
+**ws.go(package cluster)[cluster/]**
+- [ ] `type wsConn struct`
 
 -------------------
 -------------------
