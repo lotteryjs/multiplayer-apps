@@ -49,7 +49,17 @@
 - [ ] `ErrClosedGroup        = errors.New("group closed")`
 - [ ] `ErrMemberNotFound     = errors.New("member not found in the group")`
 - [ ] `ErrSessionDuplication = errors.New("session has existed in the current group")`
+---------
+**base.go(package component)**
+- [ ] `type Base struct`
+- [ ] `func (c *Base) Init`
+- [ ] `func (c *Base) AfterInit`
+- [ ] `func (c *Base) BeforeShutdown`
+- [ ] `func (c *Base) Shutdown`
 
+
+-------------------
+-------------------
 ### Blockchain
 
 **区块链技术快速入门：**
