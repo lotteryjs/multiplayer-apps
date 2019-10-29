@@ -61,6 +61,22 @@
 - [ ] `type Component interface`
 
 **hub.go(package component)**
+- [ ] `type CompWithOptions struct`
+- [ ] `type Components struct`
+- [ ] `func (cs *Components) Register(c Component, options ...Option)`
+- [ ] `func (cs *Components) List() []CompWithOptions`
+
+**method.go(package component)**
+- [ ] `func isExported(name string) bool`
+- [ ] `func isExportedOrBuiltinType(t reflect.Type) bool`
+- [ ] `func isHandlerMethod(method reflect.Method) bool`
+
+**options.go(package component)**
+- [ ] `type options struct`
+- [ ] `type Option func(options *options)`
+- [ ] `func WithName(name string) Option`
+- [ ] `func WithNameFunc(fn func(string) string) Option`
+- [ ] `func WithSchedulerName(name string) Option`
 
 
 -------------------
