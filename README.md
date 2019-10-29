@@ -57,9 +57,17 @@
 - [ ] `func (c *Base) BeforeShutdown`
 - [ ] `func (c *Base) Shutdown`
 
+**component.go(package component)**
+- [ ] `type Component interface`
+
+**hub.go(package component)**
+
 
 -------------------
 -------------------
+-------------------
+-------------------
+
 ### Blockchain
 
 **区块链技术快速入门：**
