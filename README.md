@@ -361,6 +361,17 @@
 - [ ] `const statusWorking`
 - [ ] `const statusClosed`
 
+**connpool.go(package cluster)[cluster/]**
+- [ ] `type connPool struct`
+- [ ] `type rpcClient struct`
+- [ ] `func newConnArray(maxSize uint, addr string) (*connPool, error)`
+- [ ] `func (a *connPool) init(addr string) error`
+- [ ] `func (a *connPool) Get() *grpc.ClientConn`
+- [ ] `func (a *connPool) Close()`
+- [ ] `func newRPCClient() *rpcClient`
+- [ ] `func (c *rpcClient) getConnPool(addr string) (*connPool, error)`
+- [ ] `func (c *rpcClient) createConnPool(addr string) (*connPool, error)`
+- [ ] `func (c *rpcClient) closePool()`
 
 
 -------------------
