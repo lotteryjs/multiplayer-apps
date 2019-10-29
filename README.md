@@ -24,6 +24,26 @@
 - [ ] `func (c *Group) isClosed() bool`
 - [ ] `func (c *Group) Close() error`
 
+**options.go(package nano)**
+- [ ] `type Option func(*cluster.Options)`
+- [ ] `func WithPipeline(pipeline pipeline.Pipeline) Option`
+- [ ] `func WithAdvertiseAddr(addr string, retryInterval ...time.Duration) Option`
+- [ ] `func WithClientAddr(addr string) Option`
+- [ ] `func WithMaster() Option`
+- [ ] `func WithGrpcOptions(opts ...grpc.DialOption) Option`
+- [ ] `func WithComponents(components *component.Components) Option`
+- [ ] `func WithHeartbeatInterval(d time.Duration) Option`
+- [ ] `func WithCheckOriginFunc(fn func(*http.Request) bool) Option`
+- [ ] `func WithDebugMode() Option`
+- [ ] `func WithDictionary(dict map[string]uint16) Option`
+- [ ] `func WithWSPath(path string) Option`
+- [ ] `func WithTimerPrecision(precision time.Duration) Option`
+- [ ] `func WithSerializer(serializer serialize.Serializer) Option`
+- [ ] `func WithLabel(label string) Option`
+- [ ] `func WithIsWebsocket(enableWs bool) Option`
+- [ ] `func WithTSLConfig(certificate, key string) Option`
+- [ ] `func WithLogger(l log.Logger) Option`
+
 
 ### Blockchain
 
