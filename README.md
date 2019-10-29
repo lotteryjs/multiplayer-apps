@@ -414,6 +414,38 @@
 - [ ] `func (a *acceptor) Close() error`
 - [ ] `func (*acceptor) RemoteAddr() net.Addr`
 
+**cluster.proto(package clusterpb)[cluster/clusterpb/proto]**
+* message MemberInfo
+* message RegisterRequest
+* message RegisterResponse
+* message UnregisterRequest
+* message UnregisterResponse
+* service Master
+  * rpc Register (RegisterRequest) returns (RegisterResponse) {}
+  * rpc Unregister (UnregisterRequest) returns (UnregisterResponse) {}
+* message RequestMessage
+* message NotifyMessage
+* message ResponseMessage
+* message PushMessage
+* message MemberHandleResponse
+* message NewMemberRequest
+* message NewMemberResponse
+* message DelMemberRequest
+* message DelMemberResponse
+* message SessionClosedRequest
+* message SessionClosedResponse
+* message CloseSessionRequest
+* message CloseSessionResponse
+* service Member
+  * rpc HandleRequest (RequestMessage) returns (MemberHandleResponse) {}
+  * rpc HandleNotify (NotifyMessage) returns (MemberHandleResponse) {}
+  * rpc HandlePush (PushMessage) returns (MemberHandleResponse) {}
+  * rpc HandleResponse (ResponseMessage) returns (MemberHandleResponse) {}
+  * rpc NewMember (NewMemberRequest) returns (NewMemberResponse) {}
+  * rpc DelMember (DelMemberRequest) returns (DelMemberResponse) {}
+  * rpc SessionClosed(SessionClosedRequest) returns(SessionClosedResponse) {}
+  * rpc CloseSession(CloseSessionRequest) returns(CloseSessionResponse) {}
+
 -------------------
 -------------------
 -------------------
