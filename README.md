@@ -209,6 +209,8 @@
 - [ ] `func (p *pipelineChannel) PushFront(h Func)`
 - [ ] `func (p *pipelineChannel) PushBack(h Func)`
 - [ ] `func (p *pipelineChannel) Process(s *session.Session, msg *message.Message) error`
+-----------------
+**codec.go(package codec)[internal/codec/]**
 
 
 
