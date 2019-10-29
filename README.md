@@ -4,13 +4,11 @@
 **TODO-LIST**
 
 **interface.go(package nano)**
-
 - [x] `var VERSION = "0.5.0"`
 - [ ] `func Listen(addr string, opts ...Option)`
 - [ ] `func Shutdown()`
 
 **group.go(package nano)**
-
 - [ ] `type SessionFilter func(*session.Session) bool`
 - [ ] `type Group struct`
 - [ ] `func NewGroup(n string) *Group`
