@@ -145,6 +145,8 @@
 - [ ] `func (c *connectionService) Count`
 - [ ] `func (c *connectionService) Reset`
 - [ ] `func (c *connectionService) SessionID`
+----------------
+**serialize.go(package serialize)**
 
 
 
