@@ -1,7 +1,7 @@
 # 探索基于 Golang 的分布式应用
 
 ### NANO 的设计与源码分析(Lightweight, facility, high performance golang based game server framework)
-**TODO-LIST**
+**TODO-LIST**(以下列表并非阅读顺序)
 
 **interface.go(package nano)**
 - [x] `var VERSION = "0.5.0"`
@@ -84,6 +84,68 @@
 - [ ] `type func NewService(comp Component, opts []Option) *Service`
 - [ ] `func (s *Service) suitableHandlerMethods(typ reflect.Type) map[string]*Handler`
 - [ ] `func (s *Service) ExtractHandler() error`
+------------------
+**lifetime.go(package session)**
+- [ ] `type LifetimeHandler func(*Session)`
+- [ ] `type lifetime struct`
+- [ ] `var Lifetime = &lifetime{}`
+- [ ] `func (lt *lifetime) OnClosed(h LifetimeHandler)`
+- [ ] `func (lt *lifetime) Close(s *Session)`
+
+**router.go(package session)**
+- [ ] `type Router struct`
+- [ ] `func newRouter() *Router`
+- [ ] `func (r *Router) Bind(service, address string)`
+- [ ] `func (r *Router) Find(service string) (string, bool)`
+
+**session.go(package session)**
+- [ ] `type NetworkEntity interface`
+- [ ] `var ErrIllegalUID = errors.New("illegal uid")`
+- [ ] `type Session struct`
+- [ ] `func New(entity NetworkEntity) *Session`
+- [ ] `func (s *Session) NetworkEntity() NetworkEntity`
+- [ ] `func (s *Session) Router() *Router`
+- [ ] `func (s *Session) RPC(route string, v interface{}) error`
+- [ ] `func (s *Session) Push(route string, v interface{}) error`
+- [ ] `func (s *Session) Response(v interface{}) error`
+- [ ] `func (s *Session) ResponseMID(mid uint64, v interface{}) error`
+- [ ] `func (s *Session) ID() int64`
+- [ ] `func (s *Session) UID() int64`
+- [ ] `func (s *Session) LastMid() uint64`
+- [ ] `func (s *Session) Bind(uid int64) error`
+- [ ] `func (s *Session) Close()`
+- [ ] `func (s *Session) RemoteAddr() net.Addr`
+- [ ] `func (s *Session) Remove(key string)`
+- [ ] `func (s *Session) Set(key string, value interface{})`
+- [ ] `func (s *Session) HasKey(key string) bool`
+- [ ] `func (s *Session) Int(key string) int`
+- [ ] `func (s *Session) Int8(key string) int8`
+- [ ] `func (s *Session) Int16(key string) int16`
+- [ ] `func (s *Session) Int32(key string) int32`
+- [ ] `func (s *Session) Int64(key string) int64`
+- [ ] `func (s *Session) Uint(key string) uint`
+- [ ] `func (s *Session) Uint8(key string) uint8`
+- [ ] `func (s *Session) Uint16(key string) uint16`
+- [ ] `func (s *Session) Uint32(key string) uint32`
+- [ ] `func (s *Session) Uint64(key string) uint64`
+- [ ] `func (s *Session) Float32(key string) float32`
+- [ ] `func (s *Session) Float64(key string) float64`
+- [ ] `func (s *Session) String(key string) string`
+- [ ] `func (s *Session) Value(key string) interface{}`
+- [ ] `func (s *Session) State() map[string]interface{}`
+- [ ] `func (s *Session) Restore(data map[string]interface{})`
+- [ ] `func (s *Session) Clear()`
+----------------
+**session.go(package session)**
+- [ ] `var Connections = newConnectionService()`
+- [ ] `type connectionService struct`
+- [ ] `func newConnectionService() *connectionService`
+- [ ] `func (c *connectionService) Increment`
+- [ ] `func (c *connectionService) Decrement`
+- [ ] `func (c *connectionService) Count`
+- [ ] `func (c *connectionService) Reset`
+- [ ] `func (c *connectionService) SessionID`
+
 
 
 
