@@ -275,6 +275,22 @@
 **util.go(package message)[internal/message/]**
 - [ ] `func Serialize(v interface{}) ([]byte, error)`
 
+**packet.go(package packet)[internal/packet/]**
+- [ ] `type Type byte`
+- [ ] `const _ Type = iota`
+- [ ] `const Handshake = 0x01`
+- [ ] `const HandshakeAck = 0x02`
+- [ ] `const Heartbeat = 0x03`
+- [ ] `const Data = 0x04`
+- [ ] `const Kick = 0x05`
+- [ ] `var ErrWrongPacketType = errors.New("wrong packet type")`
+- [ ] `type Packet struct`
+- [ ] `func New() *Packet`
+- [ ] `func (p *Packet) String() string`
+
+**runtime.go(package runtime)[internal/runtime/]**
+- [ ] `var CurrentNode *cluster.Node`
+
 -------------------
 -------------------
 -------------------
