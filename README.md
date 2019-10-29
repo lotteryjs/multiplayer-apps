@@ -235,6 +235,43 @@
 - [ ] `var GrpcOptions = []grpc.DialOption{grpc.WithInsecure()}`
 - [ ] `func init()`
 
+**logger.go(package log)[internal/log/]**
+- [ ] `type Logger interface`
+- [ ] `func init()`
+- [ ] `var Println func(v ...interface{})`
+- [ ] `var Fatal   func(v ...interface{})`
+- [ ] `var Fatalf  func(format string, v ...interface{})`
+- [ ] `func SetLogger(logger Logger)`
+
+**message.go(package message)[internal/message/]**
+- [ ] `type Type byte`
+- [ ] `const Request  Type = 0x00`
+- [ ] `const Notify = 0x01`
+- [ ] `const Response= 0x02`
+- [ ] `const Push = 0x03`
+- [ ] `const msgRouteCompressMask = 0x01`
+- [ ] `const msgTypeMask = 0x07`
+- [ ] `const msgRouteLengthMask = 0xFF`
+- [ ] `const msgHeadLength = 0x02`
+- [ ] `var types = map[Type]string`
+- [ ] `func (t Type) String() string`
+- [ ] `var routes = make(map[string]uint16)`
+- [ ] `var codes  = make(map[uint16]string)`
+- [ ] `var ErrWrongMessageType  = errors.New("wrong message type")`
+- [ ] `var ErrInvalidMessage    = errors.New("invalid message")`
+- [ ] `var ErrRouteInfoNotFound = errors.New("route info not found in dictionary")`
+- [ ] `var ErrWrongMessage      = errors.New("wrong message")`
+- [ ] `type Message struct`
+- [ ] `func New() *Message`
+- [ ] `func (m *Message) String() string`
+- [ ] `func (m *Message) Encode() ([]byte, error)`
+- [ ] `func routable(t Type) bool`
+- [ ] `func invalidType(t Type) bool`
+- [ ] `func Encode(m *Message) ([]byte, error)`
+- [ ] `func Encode(m *Message) ([]byte, error)`
+- [ ] `func Decode(data []byte) (*Message, error)`
+- [ ] `func SetDictionary(dict map[string]uint16)`
+
 -------------------
 -------------------
 -------------------
