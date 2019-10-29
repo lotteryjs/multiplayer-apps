@@ -1,4 +1,4 @@
-# 探索基于 Golang 分布式应用
+# 探索基于 Golang 的分布式应用
 
 ### NANO 的设计与源码分析(Lightweight, facility, high performance golang based game server framework)
 **TODO-LIST**
@@ -44,6 +44,11 @@
 - [ ] `func WithTSLConfig(certificate, key string) Option`
 - [ ] `func WithLogger(l log.Logger) Option`
 
+**errors.go(package nano)**
+- [ ] `ErrCloseClosedGroup   = errors.New("close closed group")`
+- [ ] `ErrClosedGroup        = errors.New("group closed")`
+- [ ] `ErrMemberNotFound     = errors.New("member not found in the group")`
+- [ ] `ErrSessionDuplication = errors.New("session has existed in the current group")`
 
 ### Blockchain
 
