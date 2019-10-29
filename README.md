@@ -78,6 +78,15 @@
 - [ ] `func WithNameFunc(fn func(string) string) Option`
 - [ ] `func WithSchedulerName(name string) Option`
 
+**service.go(package component)**
+- [ ] `type Handler struct`
+- [ ] `type Service struct`
+- [ ] `type func NewService(comp Component, opts []Option) *Service`
+- [ ] `func (s *Service) suitableHandlerMethods(typ reflect.Type) map[string]*Handler`
+- [ ] `func (s *Service) ExtractHandler() error`
+
+
+
 
 -------------------
 -------------------
