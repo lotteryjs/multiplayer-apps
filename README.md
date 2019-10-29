@@ -3,9 +3,10 @@
 ### NANO 的设计与源码分析(TODO-LIST)
 
 **interface.go(package nano)**
--[x] var VERSION = "0.5.0"
--[ ] func Listen(addr string, opts ...Option)
--[ ] func Shutdown()
+
+- [x] var VERSION = "0.5.0"
+- [ ] func Listen(addr string, opts ...Option)
+- [ ] func Shutdown()
 
 **group.go(package nano)**
 * `type SessionFilter func(*session.Session) bool`
