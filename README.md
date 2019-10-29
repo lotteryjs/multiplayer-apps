@@ -325,6 +325,43 @@
 - [ ] `func (n *Node) SessionClosed(_ context.Context, req *clusterpb.SessionClosedRequest) (*clusterpb.SessionClosedResponse, error)`
 - [ ] `func (n *Node) CloseSession(_ context.Context, req *clusterpb.CloseSessionRequest) (*clusterpb.CloseSessionResponse, error)`
 
+**member.go(package cluster)[cluster/]**
+- [ ] `func (m *Member) MemberInfo() *clusterpb.MemberInfo`
+
+**handler.go(package cluster)[cluster/]**
+- [ ] `var hrd []byte`
+- [ ] `var hbd []byte`
+- [ ] `type rpcHandler func(session *session.Session, msg *message.Message, noCopy bool)`
+- [ ] `func cache()`
+- [ ] `type LocalHandler struct`
+- [ ] `func NewHandler(currentNode *Node, pipeline pipeline.Pipeline) *LocalHandler`
+- [ ] `func (h *LocalHandler) register(comp component.Component, opts []component.Option) error`
+- [ ] `func (h *LocalHandler) initRemoteService(members []*clusterpb.MemberInfo)`
+- [ ] `func (h *LocalHandler) addRemoteService(member *clusterpb.MemberInfo)`
+- [ ] `func (h *LocalHandler) delMember(addr string)`
+- [ ] `func (h *LocalHandler) LocalService() []string`
+- [ ] `func (h *LocalHandler) RemoteService() []string`
+- [ ] `func (h *LocalHandler) handle(conn net.Conn)`
+- [ ] `func (h *LocalHandler) processPacket(agent *agent, p *packet.Packet) error`
+- [ ] `func (h *LocalHandler) findMembers(service string) []*clusterpb.MemberInfo`
+- [ ] `func (h *LocalHandler) remoteProcess(session *session.Session, msg *message.Message, noCopy bool)`
+- [ ] `func (h *LocalHandler) processMessage(agent *agent, msg *message.Message)`
+- [ ] `func (h *LocalHandler) handleWS(conn *websocket.Conn)`
+- [ ] `func (h *LocalHandler) localProcess(handler *component.Handler, lastMid uint64, session *session.Session, msg *message.Message)`
+
+**errors.go(package cluster)[cluster/]**
+- [ ] `ErrSessionOnNotify    = errors.New("current session working on notify mode")`
+- [ ] `ErrCloseClosedSession = errors.New("close closed session")`
+- [ ] `ErrInvalidRegisterReq = errors.New("invalid register request")`
+
+**const.go(package cluster)[cluster/]**
+- [ ] `const _ int32 = iota`
+- [ ] `const statusStart`
+- [ ] `const statusHandshake`
+- [ ] `const statusWorking`
+- [ ] `const statusClosed`
+
+
 
 -------------------
 -------------------
