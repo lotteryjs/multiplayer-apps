@@ -211,6 +211,17 @@
 - [ ] `func (p *pipelineChannel) Process(s *session.Session, msg *message.Message) error`
 -----------------
 **codec.go(package codec)[internal/codec/]**
+- [ ] `const HeadLength = 4`
+- [ ] `MaxPacketSize = 64 * 1024`
+- [ ] `var ErrPacketSizeExcced = errors.New("codec: packet size exceed")`
+- [ ] `type Decoder struct`
+- [ ] `func NewDecoder() *Decoder`
+- [ ] `func (c *Decoder) forward() error`
+- [ ] `func (c *Decoder) Decode(data []byte) ([]*packet.Packet, error)`
+- [ ] `func Encode(typ packet.Type, data []byte) ([]byte, error)`
+- [ ] `func bytesToInt(b []byte) int`
+- [ ] `func intToBytes(n int) []byte`
+
 
 
 
