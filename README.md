@@ -373,6 +373,16 @@
 - [ ] `func (c *rpcClient) createConnPool(addr string) (*connPool, error)`
 - [ ] `func (c *rpcClient) closePool()`
 
+**cluster.go(package cluster)[cluster/]**
+- [ ] `type cluster struct`
+- [ ] `func newCluster(currentNode *Node) *cluster`
+- [ ] `func (c *cluster) Register(_ context.Context, req *clusterpb.RegisterRequest) (*clusterpb.RegisterResponse, error)` 
+- [ ] `func (c *cluster) Unregister(_ context.Context, req *clusterpb.UnregisterRequest) (*clusterpb.UnregisterResponse, error)`
+- [ ] `func (c *cluster) setRpcClient(client *rpcClient)`
+- [ ] `func (c *cluster) remoteAddrs() []string`
+- [ ] `func (c *cluster) initMembers(members []*clusterpb.MemberInfo)`
+- [ ] `func (c *cluster) addMember(info *clusterpb.MemberInfo)`
+- [ ] `func (c *cluster) delMember(addr string)`
 
 -------------------
 -------------------
