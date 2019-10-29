@@ -1,5 +1,29 @@
 # 探索基于 Golang 分布式应用
 
+### NANO 的设计与源码分析(TODO-LIST)
+
+**interface.go(package nano)**
+-[x] var VERSION = "0.5.0"
+-[ ] func Listen(addr string, opts ...Option)
+-[ ] func Shutdown()
+
+**group.go(package nano)**
+* `type SessionFilter func(*session.Session) bool`
+* `type Group struct`
+* `func NewGroup(n string) *Group`
+* `func (c *Group) Member(uid int64) (*session.Session, error)`
+* `func (c *Group) Members() []int64`
+* `func (c *Group) Multicast(route string, v interface{}, filter SessionFilter) error`
+* `func (c *Group) Broadcast(route string, v interface{}) error`
+* `func (c *Group) Contains(uid int64) bool`
+* `func (c *Group) Add(session *session.Session) error`
+* `func (c *Group) Leave(s *session.Session) error`
+* `func (c *Group) LeaveAll() error`
+* `func (c *Group) Count() int`
+* `func (c *Group) isClosed() bool`
+* `func (c *Group) Close() error`
+
+
 ### Blockchain
 
 **区块链技术快速入门：**

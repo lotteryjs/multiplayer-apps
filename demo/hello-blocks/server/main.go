@@ -33,7 +33,7 @@ func (r *RoomManager) Join(s *session.Session, msg []byte) error {
 }
 
 func init() {
-	fmt.Println("logo~")
+	fmt.Println("logo~" + nano.VERSION)
 }
 
 func main() {
