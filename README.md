@@ -384,6 +384,36 @@
 - [ ] `func (c *cluster) addMember(info *clusterpb.MemberInfo)`
 - [ ] `func (c *cluster) delMember(addr string)`
 
+**agent.go(package cluster)[cluster/]**
+- [ ] `const agentWriteBacklog = 16`
+- [ ] `var ErrBrokenPipe = errors.New("broken low-level pipe")`
+- [ ] `var ErrBufferExceed = errors.New("session send buffer exceed")`
+- [ ] `type agent struct`
+- [ ] `type pendingMessage struct`
+- [ ] `func newAgent(conn net.Conn, pipeline pipeline.Pipeline, rpcHandler rpcHandler) *agent`
+- [ ] `func (a *agent) send(m pendingMessage) (err error)`
+- [ ] `func (a *agent) LastMid() uint64`
+- [ ] `func (a *agent) Push(route string, v interface{}) error`
+- [ ] `func (a *agent) RPC(route string, v interface{}) error`
+- [ ] `func (a *agent) Response(v interface{}) error`
+- [ ] `func (a *agent) ResponseMid(mid uint64, v interface{}) error`
+- [ ] `func (a *agent) Close() error`
+- [ ] `func (a *agent) RemoteAddr() net.Addr`
+- [ ] `func (a *agent) String() string`
+- [ ] `func (a *agent) status() int32`
+- [ ] `func (a *agent) setStatus(state int32)`
+- [ ] `func (a *agent) write()`
+
+**acceptor.go(package cluster)[cluster/]**
+- [ ] `type acceptor struct`
+- [ ] `func (a *acceptor) Push(route string, v interface{}) error`
+- [ ] `func (a *acceptor) RPC(route string, v interface{}) error`
+- [ ] `func (a *acceptor) LastMid() uint64`
+- [ ] `func (a *acceptor) Response(v interface{}) error`
+- [ ] `func (a *acceptor) ResponseMid(mid uint64, v interface{}) error`
+- [ ] `func (a *acceptor) Close() error`
+- [ ] `func (*acceptor) RemoteAddr() net.Addr`
+
 -------------------
 -------------------
 -------------------
