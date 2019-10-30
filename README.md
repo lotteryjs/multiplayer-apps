@@ -1,6 +1,12 @@
 # 探索基于 Golang 的分布式应用
 
 ### NANO 的设计与源码分析(Lightweight, facility, high performance golang based game server framework)
+
+**NANO通信协议的设计，NANO通信协议设计，NANO通信协议设计 -->> 非常重要~~**
+
+NANO通信协议的设计主要是参考网易的 [pomelo 协议格式](https://github.com/NetEase/pomelo/wiki/%E5%8D%8F%E8%AE%AE%E6%A0%BC%E5%BC%8F)，NANO 也因此支持路由压缩。
+* `nano-websocket-client.js protocol.js` 可以算做是对 `pomelo` 的拷贝😝。
+
 **TODO-LIST**(以下列表并非阅读顺序)
 
 **interface.go(package nano)**
