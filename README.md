@@ -1,11 +1,15 @@
 # 探索基于 Golang 的分布式应用
 
+**应用(思想)为王! 应用(思想)为王! 应用(思想)为王!**
+
 ### NANO 的设计与源码分析(Lightweight, facility, high performance golang based game server framework)
 
 **NANO通信协议的设计，NANO通信协议设计，NANO通信协议设计 -->> 非常重要~~**
 
 NANO通信协议的设计主要是参考网易的 [pomelo 协议格式](https://github.com/NetEase/pomelo/wiki/%E5%8D%8F%E8%AE%AE%E6%A0%BC%E5%BC%8F)，NANO 也因此支持路由压缩。
-* `protocol.js` 可以算做是对 [pomelo-protocol](https://github.com/NetEase/pomelo-protocol) 的拷贝😝。
+* `protocol.js` 可以算做是对 [pomelo-protocol](https://github.com/NetEase/pomelo-protocol) 的拷贝。
+* `nano-websocket-client.js` 可以算做是对 [pomelo-client.js](https://github.com/NetEase/chatofpomelo-websocket/blob/master/web-server/public/js/lib/components/pomelonode-pomelo-jsclient-websocket/lib/pomelo-client.js) 的拷贝😝。
+  * `nano-websocket-client.js` 阉割了一些。`protobuf` 解析部分被阉割了，到时侯用的时候加上就好。**应用为王!!!**
 
 **TODO-LIST**(以下列表并非阅读顺序)
 
