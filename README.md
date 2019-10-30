@@ -9,6 +9,13 @@ NANO通信协议的设计主要是参考网易的 [pomelo 协议格式](https://
 * `nano-websocket-client.js` 可以算做是对 [pomelo-client.js](https://github.com/NetEase/chatofpomelo-websocket/blob/master/web-server/public/js/lib/components/pomelonode-pomelo-jsclient-websocket/lib/pomelo-client.js) 的拷贝😝。
   * `nano-websocket-client.js` 阉割了一些。`protobuf` 解析部分被阉割了，到时侯用的时候加上就好。**应用为王!!!**
 
+WebSocket & Javascript & 二进制相关基础文章
+* [WebSocket系列之基础知识入门篇](https://juejin.im/post/5ab91ac96fb9a028db58b1d5)
+* [WebSocket系列之JavaScript数字数据如何转换为二进制数据](https://juejin.im/post/5abb560a6fb9a028d141262b)
+* [WebSocket系列之JavaScript字符串如何与二进制数据间进行互相转换](https://juejin.im/post/5abdc38ef265da2375070008)
+* [WebSocket系列之二进制数据设计与传输](https://juejin.im/post/5abf5394f265da239e4e3545)
+* [WebSocket系列之如何建立和维护可靠的连接](https://juejin.im/post/5ac5e8b06fb9a028b617beff)
+
 **TODO-LIST**(以下列表并非阅读顺序)
 
 **interface.go(package nano)**
