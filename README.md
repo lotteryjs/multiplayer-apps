@@ -1,7 +1,5 @@
 # 探索基于 Golang 的分布式应用
 
-**应用(思想)为王! 应用(思想)为王! 应用(思想)为王!**
-
 ### NANO 的设计与源码分析(Lightweight, facility, high performance golang based game server framework)
 
 **NANO通信协议的设计，NANO通信协议设计，NANO通信协议设计 -->> 非常重要~~**
@@ -532,6 +530,13 @@ NANO通信协议的设计主要是参考网易的 [pomelo 协议格式](https://
 * 想法2：使用 [redux](https://github.com/reduxjs/redux)(状态管理) + [redux-saga](https://github.com/redux-saga/redux-saga)(游戏逻辑管理)
 
 ### 快速上手 GO 与 WebSocket
+
+JS & WebSocket & 二进制
+* [你还在用charCodeAt那你就out了](https://github.com/akira-cn/FE_You_dont_know/issues/4)
+* [从 IM 通信 Web SDK 来看如何提高代码可维护性与可扩展性](https://juejin.im/post/5c49f16b51882523ea6e0ef1)
+* [WebSocket 协议 RFC 文档（全中文翻译）](https://juejin.im/post/5c6b7366e51d45016527d648)
+* [二进制数组实战 - 纯前端导出Excel文件](https://juejin.im/post/5c31a5086fb9a04a102f6f50)
+* [websocket 二进制数据传输基础准备工作](https://juejin.im/post/5ca43ed2f265da30b3409645)
 
 视频教程：[GO实现千万级WebSocket消息推送服务](https://www.imooc.com/learn/1025)
 * 非常好的扫盲教程
