@@ -10,11 +10,14 @@ NANO通信协议的设计主要是参考网易的 [pomelo 协议格式](https://
   * `nano-websocket-client.js` 阉割了一些。`protobuf` 解析部分被阉割了，到时侯用的时候加上就好。**应用为王!!!**
 
 JS & WebSocket & 二进制
+* [Unicode®字符百科](https://unicode-table.com/cn/#control-character)
+* [进制转换-秒懂](https://jingyan.baidu.com/article/597a0643614568312b5243c0.html)
+* [WebSocket 二进制传输基础准备-Unicode转UTF16和UTF8](https://juejin.im/post/5ca5c689f265da30ca24a960)
 * [你还在用charCodeAt那你就out了](https://github.com/akira-cn/FE_You_dont_know/issues/4)
 * [从 IM 通信 Web SDK 来看如何提高代码可维护性与可扩展性](https://juejin.im/post/5c49f16b51882523ea6e0ef1)
 * [WebSocket 协议 RFC 文档（全中文翻译）](https://juejin.im/post/5c6b7366e51d45016527d648)
 * [二进制数组实战 - 纯前端导出Excel文件](https://juejin.im/post/5c31a5086fb9a04a102f6f50)
-* [websocket 二进制数据传输基础准备工作](https://juejin.im/post/5ca43ed2f265da30b3409645)
+* [WebSocket 二进制数据传输基础准备工作](https://juejin.im/post/5ca43ed2f265da30b3409645)
 
 **TODO-LIST**(以下列表并非阅读顺序)
 
