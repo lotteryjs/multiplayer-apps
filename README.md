@@ -2,7 +2,10 @@
 
 ### NANO 的设计与源码分析(Lightweight, facility, high performance golang based game server framework)
 
-**NANO通信协议的设计，NANO通信协议设计，NANO通信协议设计 -->> 非常重要~~**
+**为啥调研它？**
+* [NANO](https://github.com/lonng/nano) 由 PingCAP 团队成员 [Lonng](https://github.com/lonng) 开发并维护。作者也是 [TiDB](https://github.com/pingcap/tidb) 活跃贡献者。代码质量应该是不错的。
+
+**NANO通信协议的设计分析**
 
 NANO通信协议的设计主要是参考网易的 [pomelo 协议格式](https://github.com/NetEase/pomelo/wiki/%E5%8D%8F%E8%AE%AE%E6%A0%BC%E5%BC%8F)，NANO 也因此支持路由压缩。
 * `protocol.js` 可以算做是对 [pomelo-protocol](https://github.com/NetEase/pomelo-protocol) 的拷贝。
