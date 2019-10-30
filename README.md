@@ -9,12 +9,12 @@ NANO通信协议的设计主要是参考网易的 [pomelo 协议格式](https://
 * `nano-websocket-client.js` 可以算做是对 [pomelo-client.js](https://github.com/NetEase/chatofpomelo-websocket/blob/master/web-server/public/js/lib/components/pomelonode-pomelo-jsclient-websocket/lib/pomelo-client.js) 的拷贝😝。
   * `nano-websocket-client.js` 阉割了一些。`protobuf` 解析部分被阉割了，到时侯用的时候加上就好。**应用为王!!!**
 
-WebSocket & Javascript & 二进制相关基础文章
-* [WebSocket系列之基础知识入门篇](https://juejin.im/post/5ab91ac96fb9a028db58b1d5)
-* [WebSocket系列之JavaScript数字数据如何转换为二进制数据](https://juejin.im/post/5abb560a6fb9a028d141262b)
-* [WebSocket系列之JavaScript字符串如何与二进制数据间进行互相转换](https://juejin.im/post/5abdc38ef265da2375070008)
-* [WebSocket系列之二进制数据设计与传输](https://juejin.im/post/5abf5394f265da239e4e3545)
-* [WebSocket系列之如何建立和维护可靠的连接](https://juejin.im/post/5ac5e8b06fb9a028b617beff)
+JS & WebSocket & 二进制
+* [你还在用charCodeAt那你就out了](https://github.com/akira-cn/FE_You_dont_know/issues/4)
+* [从 IM 通信 Web SDK 来看如何提高代码可维护性与可扩展性](https://juejin.im/post/5c49f16b51882523ea6e0ef1)
+* [WebSocket 协议 RFC 文档（全中文翻译）](https://juejin.im/post/5c6b7366e51d45016527d648)
+* [二进制数组实战 - 纯前端导出Excel文件](https://juejin.im/post/5c31a5086fb9a04a102f6f50)
+* [websocket 二进制数据传输基础准备工作](https://juejin.im/post/5ca43ed2f265da30b3409645)
 
 **TODO-LIST**(以下列表并非阅读顺序)
 
@@ -537,13 +537,6 @@ WebSocket & Javascript & 二进制相关基础文章
 * 想法2：使用 [redux](https://github.com/reduxjs/redux)(状态管理) + [redux-saga](https://github.com/redux-saga/redux-saga)(游戏逻辑管理)
 
 ### 快速上手 GO 与 WebSocket
-
-JS & WebSocket & 二进制
-* [你还在用charCodeAt那你就out了](https://github.com/akira-cn/FE_You_dont_know/issues/4)
-* [从 IM 通信 Web SDK 来看如何提高代码可维护性与可扩展性](https://juejin.im/post/5c49f16b51882523ea6e0ef1)
-* [WebSocket 协议 RFC 文档（全中文翻译）](https://juejin.im/post/5c6b7366e51d45016527d648)
-* [二进制数组实战 - 纯前端导出Excel文件](https://juejin.im/post/5c31a5086fb9a04a102f6f50)
-* [websocket 二进制数据传输基础准备工作](https://juejin.im/post/5ca43ed2f265da30b3409645)
 
 视频教程：[GO实现千万级WebSocket消息推送服务](https://www.imooc.com/learn/1025)
 * 非常好的扫盲教程
