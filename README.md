@@ -24,6 +24,43 @@ JS & WebSocket & 二进制
 
 **TODO-LIST**(以下列表并非阅读顺序)
 
+--------------------
+**base.go(package component)[component/]**
+- [ ] `type Base struct`
+- [ ] `func (c *Base) Init`
+- [ ] `func (c *Base) AfterInit`
+- [ ] `func (c *Base) BeforeShutdown`
+- [ ] `func (c *Base) Shutdown`
+
+**component.go(package component)[component/]**
+- [ ] `type Component interface`
+
+**hub.go(package component)[component/]**
+- [ ] `type CompWithOptions struct`
+- [ ] `type Components struct`
+- [ ] `func (cs *Components) Register(c Component, options ...Option)`
+- [ ] `func (cs *Components) List() []CompWithOptions`
+
+**method.go(package component)[component/]**
+- [ ] `func isExported(name string) bool`
+- [ ] `func isExportedOrBuiltinType(t reflect.Type) bool`
+- [ ] `func isHandlerMethod(method reflect.Method) bool`
+
+**options.go(package component)[component/]**
+- [ ] `type options struct`
+- [ ] `type Option func(options *options)`
+- [ ] `func WithName(name string) Option`
+- [ ] `func WithNameFunc(fn func(string) string) Option`
+- [ ] `func WithSchedulerName(name string) Option`
+
+**service.go(package component)[component/]**
+- [ ] `type Handler struct`
+- [ ] `type Service struct`
+- [ ] `type func NewService(comp Component, opts []Option) *Service`
+- [ ] `func (s *Service) suitableHandlerMethods(typ reflect.Type) map[string]*Handler`
+- [ ] `func (s *Service) ExtractHandler() error`
+------------------
+
 **interface.go(package nano)**
 - [x] `var VERSION = "0.5.0"`
 - [ ] `func Listen(addr string, opts ...Option)`
@@ -71,41 +108,7 @@ JS & WebSocket & 二进制
 - [ ] `ErrMemberNotFound     = errors.New("member not found in the group")`
 - [ ] `ErrSessionDuplication = errors.New("session has existed in the current group")`
 ---------
-**base.go(package component)[component/]**
-- [ ] `type Base struct`
-- [ ] `func (c *Base) Init`
-- [ ] `func (c *Base) AfterInit`
-- [ ] `func (c *Base) BeforeShutdown`
-- [ ] `func (c *Base) Shutdown`
 
-**component.go(package component)[component/]**
-- [ ] `type Component interface`
-
-**hub.go(package component)[component/]**
-- [ ] `type CompWithOptions struct`
-- [ ] `type Components struct`
-- [ ] `func (cs *Components) Register(c Component, options ...Option)`
-- [ ] `func (cs *Components) List() []CompWithOptions`
-
-**method.go(package component)[component/]**
-- [ ] `func isExported(name string) bool`
-- [ ] `func isExportedOrBuiltinType(t reflect.Type) bool`
-- [ ] `func isHandlerMethod(method reflect.Method) bool`
-
-**options.go(package component)[component/]**
-- [ ] `type options struct`
-- [ ] `type Option func(options *options)`
-- [ ] `func WithName(name string) Option`
-- [ ] `func WithNameFunc(fn func(string) string) Option`
-- [ ] `func WithSchedulerName(name string) Option`
-
-**service.go(package component)[component/]**
-- [ ] `type Handler struct`
-- [ ] `type Service struct`
-- [ ] `type func NewService(comp Component, opts []Option) *Service`
-- [ ] `func (s *Service) suitableHandlerMethods(typ reflect.Type) map[string]*Handler`
-- [ ] `func (s *Service) ExtractHandler() error`
-------------------
 **lifetime.go(package session)[session/]**
 - [ ] `type LifetimeHandler func(*Session)`
 - [ ] `type lifetime struct`
