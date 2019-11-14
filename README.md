@@ -59,6 +59,8 @@ JS & WebSocket & 二进制
 - [ ] `type func NewService(comp Component, opts []Option) *Service`
 - [ ] `func (s *Service) suitableHandlerMethods(typ reflect.Type) map[string]*Handler`
 - [ ] `func (s *Service) ExtractHandler() error`
+
+![nano-component](./images/nano/nano-component.png)
 ------------------
 
 **interface.go(package nano)**
