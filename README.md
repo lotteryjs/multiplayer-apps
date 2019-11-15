@@ -1,8 +1,12 @@
 # 探索基于 Golang 的分布式应用
 
-### NANO 的设计与源码分析(Lightweight, facility, high performance golang based game server framework)
+**[NANO](https://github.com/lonng/nano)的设计分析(Lightweight, facility, high performance golang based game server framework)**
+
+1：
 
 ![](./images/nano/nano.Listen-1.jpg)
+
+
 
 **为啥调研它？**
 * [NANO](https://github.com/lonng/nano) 由 PingCAP 团队成员 [Lonng](https://github.com/lonng) 开发并维护。作者也是 [TiDB](https://github.com/pingcap/tidb) 活跃贡献者。代码质量应该是不错的。
