@@ -1,4 +1,4 @@
-# 探索基于 Golang 的分布式应用
+# Making multiplayer apps a thing.
 
 **[NANO](https://github.com/lonng/nano)的设计分析(Lightweight, facility, high performance golang based game server framework)**
 
