@@ -2,6 +2,8 @@
 
 ### NANO 的设计与源码分析(Lightweight, facility, high performance golang based game server framework)
 
+![](./images/nano/nano.Listen-1.jpg)
+
 **为啥调研它？**
 * [NANO](https://github.com/lonng/nano) 由 PingCAP 团队成员 [Lonng](https://github.com/lonng) 开发并维护。作者也是 [TiDB](https://github.com/pingcap/tidb) 活跃贡献者。代码质量应该是不错的。
 
